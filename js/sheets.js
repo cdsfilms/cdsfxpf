@@ -84,7 +84,8 @@ function parseGvizResponse(text) {
   }
   const cols = (json.table.cols || []).map((c, i) => {
     // gviz prefers `label` (the header row text), falling back to `id`.
-    const raw = (c.label || c.id || `col${i}`).toString().trim();
+    // Lowercase so sheet headers like "S1_1" match substepColumn("1.1") → "s1_1".
+    const raw = (c.label || c.id || `col${i}`).toString().trim().toLowerCase();
     return raw;
   });
   return (json.table.rows || []).map((row) => {
