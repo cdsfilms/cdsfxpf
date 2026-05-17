@@ -1,0 +1,473 @@
+{
+  "intro": {
+    "Quy trình này dành cho ai?": "<p>Quy trình này dành cho những biên kịch mới bắt đầu cũng như những người đã có kinh nghiệm muốn có một lộ trình rõ ràng để biến ý tưởng thành kịch bản hoàn chỉnh. Quy trình tổng hợp các nguyên tắc cốt lõi của nghệ thuật kể chuyện điện ảnh, với các bước thực hành cụ thể, các worksheet đi kèm, và checklist để tự đánh giá.</p>",
+    "Triết lý nền tảng": "<p>Một kịch bản hay không phụ thuộc vào công thức hay kỹ thuật phức tạp. Nó phụ thuộc vào sự hiểu biết sâu sắc về:</p><ul><li>Xung đột triết lý — hai quan điểm sống đối lập va chạm với nhau</li><li>Nhân vật — những con người thật với niềm tin, mong muốn và nỗi sợ riêng</li><li>Sự thay đổi — hành trình mà nhân vật phải trả giá để đạt được điều họ muốn</li><li>Sự thật cảm xúc — bản chất sâu sắc nhất của câu chuyện vượt lên trên tình tiết bề mặt</li></ul><p>  <em>Dù câu chuyện của bạn có độc đáo đến đâu, những nguyên tắc cơ bản của kể chuyện vẫn không thay đổi. Và đó là một điều tốt — vì điều đó có nghĩa là bạn có thể học được các yếu tố cốt lõi của kể chuyện và tận dụng chúng để biến một ý tưởng tốt thành một câu chuyện tuyệt vời.</em></p>",
+    "Cách sử dụng tài liệu": "<p>Quy trình được thiết kế tuần tự — mỗi giai đoạn xây dựng trên nền tảng giai đoạn trước. Tuy nhiên, viết kịch bản không phải là quá trình tuyến tính. Bạn sẽ thường xuyên phải quay lại các giai đoạn trước để điều chỉnh khi phát hiện vấn đề. Hãy coi đây là một bản đồ, không phải một đường ray.</p>"
+  },
+  "stages": [
+    {
+      "num": 1,
+      "title": "Phát triển ý tưởng cốt lõi",
+      "intro_html": "<p>Mọi kịch bản bắt đầu từ một ý tưởng. Nhưng không phải ý tưởng nào cũng đủ mạnh để trở thành phim. Giai đoạn này giúp bạn tìm ra ý tưởng đáng để theo đuổi.</p>",
+      "substeps": [
+        {
+          "id": "1.1",
+          "title": "Động não ý tưởng",
+          "html": "<p>Đừng vội đánh giá. Hãy ghi lại tất cả những gì bạn nghĩ đến — từ một hình ảnh, một câu hỏi, một nhân vật, một tình huống, một cảm xúc, hay một sự kiện có thật. Mục tiêu của bước này là số lượng, không phải chất lượng.</p><h4>Các nguồn cảm hứng:</h4><ul><li>Trải nghiệm cá nhân và quan sát đời sống xung quanh</li><li>Câu chuyện thật từ báo chí, lịch sử, hoặc người quen</li><li>Câu hỏi 'điều gì sẽ xảy ra nếu...'</li><li>Một nhân vật thú vị xuất hiện trong tâm trí</li><li>Một xung đột đạo đức hoặc triết lý ám ảnh bạn</li><li>Một bối cảnh độc đáo (thời gian, địa điểm, văn hóa)</li></ul>"
+        },
+        {
+          "id": "1.2",
+          "title": "Sàng lọc ý tưởng",
+          "html": "<p>Sau khi có danh sách ý tưởng, hãy tự hỏi với mỗi ý tưởng:</p><ol><li>Tôi có thực sự đam mê câu chuyện này không? Tôi có sẵn sàng dành 6 tháng đến vài năm để viết và viết lại nó không?</li><li>Câu chuyện này có gì độc đáo? Nếu khán giả đã xem hàng nghìn phim, điều gì khiến họ phải xem phim của tôi?</li><li>Có xung đột rõ ràng không? Một câu chuyện không có xung đột không phải là câu chuyện.</li><li>Tôi đang muốn nói điều gì? Câu chuyện này phản ánh quan điểm gì về cuộc sống?</li></ol>"
+        },
+        {
+          "id": "1.3",
+          "title": "Xác định thể loại",
+          "html": "<p>Mỗi thể loại phim có những quy tắc, kỳ vọng và 'hợp đồng ngầm' với khán giả. Hãy xác định thể loại sớm vì nó ảnh hưởng đến mọi quyết định sau này.</p><h4>Các câu hỏi cần trả lời:</h4><ul><li>Câu chuyện của tôi thuộc thể loại nào? (Drama, Hài, Hành động, Kinh dị, Tình cảm, Khoa học viễn tưởng, Thần thoại...)</li><li>Có những quy tắc nào của thể loại tôi cần lưu ý?</li><li>Khán giả sẽ mang tâm thế gì khi chọn xem phim này?</li><li>Phim này có 'móc câu' (hook) gì khác biệt so với những phim cùng thể loại?</li></ul>"
+        },
+        {
+          "id": "1.4",
+          "title": "Xác định chủ đề trung tâm (nếu sẵn sàng)",
+          "html": "<p>Chủ đề là 'điều câu chuyện nói về' ở mức sâu nhất — không phải tình tiết, mà là ý nghĩa. Ví dụ: chủ đề của Titanic không phải là 'tàu chìm' mà là 'tình yêu vượt qua giai cấp và cái chết'.</p><p>Bạn không nhất thiết phải biết chủ đề ngay từ đầu. Nhiều biên kịch chỉ tìm ra chủ đề khi đã viết được vài bản nháp. Nhưng nếu bạn đã có cảm nhận về chủ đề, hãy ghi lại.</p><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 1:</h4><ul><li>Một câu mô tả ngắn (1-2 câu) về ý tưởng</li><li>Thể loại được xác định</li><li>Chủ đề (nếu có) được phác thảo sơ bộ</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Xây dựng nền tảng triết lý và xung đột chủ đề",
+      "intro_html": "<p>Đây là giai đoạn quan trọng nhất nhưng thường bị bỏ qua. Một câu chuyện không có xung đột triết lý thường rỗng tuếch dù tình tiết hấp dẫn đến đâu. Câu chuyện hay là sự xung đột giữa những thế giới quan đối lập.</p>",
+      "substeps": [
+        {
+          "id": "2.1",
+          "title": "Xác định xung đột triết lý cốt lõi (Chủ đề vs Phản chủ đề)",
+          "html": "<p>Hãy hình dung câu chuyện của bạn như một cuộc tranh luận về cách sống. Có hai quan điểm đối lập (A và B), và toàn bộ câu chuyện là cuộc khám phá xem quan điểm nào đúng — hoặc cả hai đều có ưu nhược điểm riêng.</p><h4>Ví dụ xung đột triết lý — Câu chuyện về sĩ quan cảnh sát:</h4><p>| QUAN ĐIỂM A (Chủ đề) | QUAN ĐIỂM B (Phản chủ đề) | | :---- | :---- | | Phải hành xử theo pháp luật. Nếu không, xã hội sẽ sụp đổ — chúng ta không khác gì tội phạm. | Tội phạm cần bị tiêu diệt bằng mọi giá, dù có phải lách luật. | | Ưu điểm: Giữ nguyên tắc đạo đức cá nhân; duy trì hệ thống pháp luật; không hạ thấp bản thân. | Ưu điểm: Công việc tiến triển nhanh và hiệu quả hơn. | | Nhược điểm: Tội phạm có thể lợi dụng kẽ hở pháp luật; cảm thấy như đang đánh trận với tay bị trói sau lưng. | Nhược điểm: Tự kéo mình ngang tầm tội phạm và dần trở nên như chúng; lằn ranh giữa chính nghĩa và tội ác bị mờ nhạt. |</p><h4>⚠️ LƯU Ý QUAN TRỌNG:</h4><p><em>Lý tưởng nhất là cả hai quan điểm đều có điểm mạnh và điểm yếu để có một câu chuyện khai thác vùng xám, không trắng đen rõ ràng. Nếu bạn có một câu trả lời đúng rõ ràng và một câu trả lời sai rõ ràng, câu chuyện sẽ trở nên 'máy móc' và khuôn mẫu.</em></p>"
+        },
+        {
+          "id": "2.2",
+          "title": "Xác định cái giá triết lý",
+          "html": "<p>Sau khi có hai quan điểm đối lập, hãy trả lời:</p><ul><li>Nếu nhân vật chính chọn quan điểm A và thành công, điều đó nói gì về cuộc sống?</li><li>Nếu nhân vật chính chọn quan điểm B và thất bại, điều đó nói gì?</li><li>Hai quan điểm này phản ánh điều gì về quan điểm sống của chính bạn — biên kịch?</li></ul><p>Đây chính là 'điều gì đang bị đe dọa' (the stakes) ở mức triết lý. Nó cho phép câu chuyện vượt lên trên tình tiết để chạm tới khán giả ở mức sâu nhất.</p><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 2:</h4><ul><li>Hai quan điểm triết lý đối lập (A và B) được viết rõ</li><li>Ưu/nhược điểm của mỗi quan điểm</li><li>Hiểu rõ 'điều gì đang bị đe dọa' ở mức triết lý</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Xây dựng nhân vật",
+      "intro_html": "<p>Nhân vật là linh hồn của câu chuyện. Một câu chuyện có cốt truyện hay nhưng nhân vật yếu sẽ không bao giờ chạm tới khán giả. Ngược lại, một nhân vật sống động có thể cứu một cốt truyện đơn giản.</p>",
+      "substeps": [
+        {
+          "id": "3.1",
+          "title": "Xác định nhân vật chính",
+          "html": "<p>Câu chuyện của bạn là về AI? Mọi câu chuyện hay đều có một nhân vật chính rõ ràng — người mà khán giả sẽ theo dõi xuyên suốt và đầu tư cảm xúc vào.</p><h4>Hồ sơ nhân vật chính cần có:</h4><ul><li>Danh tính cơ bản: Tên, tuổi, nghề nghiệp, hoàn cảnh sống</li><li>Tính cách: Điểm mạnh, điểm yếu, nỗi sợ, niềm tin</li><li>Mong muốn (Want): Điều họ nghĩ rằng họ muốn — mục tiêu bề mặt</li><li>Nhu cầu (Need): Điều họ thực sự cần để trưởng thành — mục tiêu nội tâm</li><li>Khuyết điểm (Flaw): Điểm yếu khiến họ không thể đạt được điều mình muốn</li><li>Backstory: Quá khứ định hình họ (chỉ giữ phần BẮT BUỘC cho câu chuyện)</li></ul>"
+        },
+        {
+          "id": "3.2",
+          "title": "Gắn nhân vật vào xung đột triết lý",
+          "html": "<p>Đây là bước quan trọng giúp nhân vật không bị 'rỗng'. Với mỗi nhân vật trong câu chuyện, hãy trả lời:</p><ol><li>Niềm tin cụ thể của nhân vật về xung đột triết lý là gì?</li><li>Họ đứng ở quan điểm A hay B? Hay đâu đó ở giữa?</li><li>Quan điểm này quan trọng với nhân vật vì lý do gì? (Liên quan đến quá khứ, tổn thương, giá trị sống...)</li><li>Nhân vật MUỐN gì cụ thể trong câu chuyện?</li><li>Mong muốn đó được thúc đẩy bởi quan điểm triết lý của họ như thế nào?</li><li>Họ HÀNH ĐỘNG ra sao để đạt được điều mình muốn, dựa trên quan điểm của mình?</li></ol>"
+        },
+        {
+          "id": "3.3",
+          "title": "Xây dựng nhân vật phản diện cân xứng",
+          "html": "<p>Phản diện không phải là 'kẻ ác'. Phản diện là người đại diện cho QUAN ĐIỂM ĐỐI LẬP với nhân vật chính. Họ tin rằng điều họ làm là ĐÚNG.</p><h4>Quy tắc quan trọng:</h4><ul><li>Phản diện phải có hệ giá trị triết lý thuyết phục — họ tin điều họ làm là đúng</li><li>Phản diện phải CÂN SỨC với nhân vật chính — nếu yếu hơn, không có 'cuộc chiến' đúng nghĩa</li><li>Phản diện cũng là con người — đừng biến họ thành hình mẫu rập khuôn</li><li>Phản diện cần có mong muốn riêng, được thúc đẩy bởi quan điểm riêng</li></ul>"
+        },
+        {
+          "id": "3.4",
+          "title": "Xây dựng nhân vật phụ",
+          "html": "<p>Nhân vật phụ tồn tại để PHỤC VỤ cho câu chuyện chính. Mỗi nhân vật phụ nên:</p><ul><li>Đại diện cho một biến thể của xung đột triết lý</li><li>Tạo áp lực, thử thách, hoặc hỗ trợ nhân vật chính</li><li>Có cá tính riêng biệt, không bị nhầm lẫn với nhau</li><li>Có lý do tồn tại trong câu chuyện — không phải 'cho có'</li></ul><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 3:</h4><ul><li>Hồ sơ chi tiết của nhân vật chính</li><li>Hồ sơ nhân vật phản diện cân xứng</li><li>Bản đồ niềm tin triết lý của tất cả nhân vật chính</li><li>Danh sách nhân vật phụ với vai trò rõ ràng</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Viết logline",
+      "intro_html": "<p>Logline là 1-2 câu mô tả toàn bộ câu chuyện. Đây là công cụ quan trọng nhất để 'pitch' (giới thiệu) câu chuyện và cũng là kim chỉ nam giúp bạn không lạc hướng khi viết.</p>",
+      "substeps": [
+        {
+          "id": "4.1",
+          "title": "Hiểu công thức Logline",
+          "html": "<p><em>\"Khi \\[Nhân Vật Chính\\] gặp \\[Biến Cố Kích Động\\], họ phải đạt được \\[Mục Tiêu\\] trước khi \\[Nguy Cơ\\].\"</em></p><h4>Bốn yếu tố cốt lõi:</h4><p>| YẾU TỐ | Ý NGHĨA | | :---- | :---- | | 1\\. Nhân vật chính | Miêu tả danh tính ngắn gọn, gợi tính cách và hoàn cảnh. | | 2\\. Biến cố kích động | Vấn đề/sự kiện bất ngờ buộc nhân vật chính phải hành động. | | 3\\. Mục tiêu | Nhiệm vụ rõ ràng, cụ thể, có thể đạt được hoặc không. | | 4\\. Nguy cơ | Cái giá phải trả nếu thất bại — điều gì đang bị đe dọa. |</p>"
+        },
+        {
+          "id": "4.2",
+          "title": "Viết bản nháp logline",
+          "html": "<p>Viết 5-10 phiên bản logline khác nhau cho cùng một câu chuyện. Mỗi phiên bản, hãy thử:</p><ul><li>Thay đổi cách miêu tả nhân vật</li><li>Thay đổi cách diễn đạt biến cố</li><li>Làm cho mục tiêu cụ thể hơn</li><li>Nhấn mạnh nguy cơ rõ hơn</li></ul>"
+        },
+        {
+          "id": "4.3",
+          "title": "Ví dụ tham khảo",
+          "html": "<h4>Ví dụ 1 — Titanic:</h4><p><em>\"Khi một tiểu thư quý tộc trẻ tuổi phải lòng một chàng trai nghèo trên tàu Titanic, cô phải theo đuổi tiếng gọi con tim và chiếm được tình cảm của chàng trai trước khi vị hôn phu kiểm soát ép cô vào một cuộc hôn nhân khổ sở.\"</em></p><ul><li>Nhân vật chính: Một tiểu thư quý tộc trẻ tuổi</li><li>Biến cố kích động: Phải lòng một chàng trai nghèo trên tàu Titanic</li><li>Mục tiêu: Theo đuổi tiếng gọi con tim và chiếm được tình cảm của chàng trai</li><li>Nguy cơ: Bị ép vào một cuộc hôn nhân khổ sở với vị hôn phu kiểm soát</li></ul><h4>Ví dụ 2 — Toy Story:</h4><p><em>\"Khi một món đồ chơi phi hành gia mới chiếm lấy vị trí đồ chơi yêu thích nhất của cậu chủ, một búp bê cao bồi cũ phải nỗ lực giành lại vị trí này trước khi bị cậu bé lãng quên.\"</em></p><h4>Ví dụ 3 — The Lion King:</h4><p><em>\"Sau khi bị lưu đày oan vì cái chết của cha mình, một hoàng tử sư tử phải trở về để giành lại ngai vàng trước khi người chú độc ác hủy hoại vương quốc.\"</em></p>"
+        },
+        {
+          "id": "4.4",
+          "title": "Tránh các sai lầm phổ biến",
+          "html": "<ul><li>Miêu tả mơ hồ — không cụ thể về ai, làm gì, vì sao</li><li>Thông tin dư thừa — kể quá nhiều chi tiết không cần thiết</li><li>Không rõ ràng giữa các yếu tố — trộn lẫn biến cố với mục tiêu, mục tiêu với nguy cơ</li><li>Thiếu nguy cơ rõ ràng — không thấy được điều gì đang bị đe dọa</li></ul><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 4:</h4><ul><li>Một logline hoàn chỉnh, ngắn gọn, súc tích</li><li>Bốn yếu tố cốt lõi được xác định rõ ràng</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Phác thảo cấu trúc cốt truyện",
+      "intro_html": "<p>Trước khi viết kịch bản chi tiết, bạn cần biết câu chuyện của mình đi từ đâu đến đâu. Cấu trúc là bộ khung giúp câu chuyện có nhịp điệu, có sự phát triển logic, và có cao trào thỏa mãn.</p>",
+      "substeps": [
+        {
+          "id": "5.1",
+          "title": "Chọn mô hình cấu trúc",
+          "html": "<h4>Mô hình phổ biến:</h4><ul><li>Cấu trúc ba hồi: Mô hình kinh điển và linh hoạt nhất</li><li>Hành trình anh hùng (Hero's Journey): 12 bước theo Joseph Campbell</li><li>Cấu trúc phi tuyến tính: Đảo ngược thời gian, đa tuyến truyện</li></ul>"
+        },
+        {
+          "id": "5.2",
+          "title": "Áp dụng cấu trúc ba hồi",
+          "html": "<p>| HỒI | CHỨC NĂNG | NỘI DUNG CHÍNH | | :---- | :---- | :---- | | HỒI 1(25%) | Mở đầu — Thiết lập | Giới thiệu nhân vật chính, thế giới của họ, mong muốn ban đầu. Biến cố kích động xảy ra. Nhân vật quyết định bước vào hành trình. Kết thúc bằng PLOT POINT 1 — quyết định không thể quay đầu. | | HỒI 2A(25%) | Phát triển — Khám phá | Nhân vật bước vào thế giới mới. Học các quy tắc, gặp đồng minh và kẻ thù. Theo đuổi mục tiêu nhưng dùng phương pháp cũ (dựa trên niềm tin sai lầm). Đạt được những thắng lợi nhỏ. MIDPOINT — sự kiện đảo ngược tình thế. | | HỒI 2B(25%) | Phát triển — Khủng hoảng | Mọi thứ trở nên tồi tệ. Phương pháp cũ không còn hiệu quả. Đồng minh phản bội hoặc rời đi. Nhân vật chạm đáy. PLOT POINT 2 — khoảnh khắc tăm tối nhất, buộc nhân vật phải thay đổi từ bên trong. | | HỒI 3(25%) | Kết thúc — Cao trào | Nhân vật đã thay đổi, áp dụng nhận thức mới. Đối đầu cuối cùng với phản diện — đối đầu cả về thể chất và triết lý. Cao trào giải quyết xung đột chủ đề. Kết thúc thể hiện thế giới mới. |</p>"
+        },
+        {
+          "id": "5.3",
+          "title": "Xác định các điểm ngoặt quan trọng",
+          "html": "<p>Mỗi câu chuyện có những 'điểm ngoặt' (turning points) — khoảnh khắc thay đổi hướng đi của câu chuyện. Đây là những điểm mà cảm xúc của khán giả phải lên đến đỉnh:</p><ol><li>MỞ ĐẦU (Opening Image): Hình ảnh đầu tiên thiết lập tông giọng và thế giới</li><li>THIẾT LẬP (Setup): Giới thiệu nhân vật chính trong cuộc sống thường ngày</li><li>BIẾN CỐ KÍCH ĐỘNG (Inciting Incident): Sự kiện phá vỡ trạng thái cân bằng</li><li>PLOT POINT 1: Quyết định không thể quay đầu — bước vào Hồi 2</li><li>MIDPOINT: Sự kiện giữa phim đảo ngược tình thế hoặc tiết lộ quan trọng</li><li>PLOT POINT 2: Khoảnh khắc tăm tối nhất — bước vào Hồi 3</li><li>CAO TRÀO (Climax): Đối đầu cuối cùng quyết định tất cả</li><li>KẾT THÚC (Resolution): Hình ảnh cuối thể hiện thế giới mới</li></ol>"
+        },
+        {
+          "id": "5.4",
+          "title": "Đảm bảo tính cân xứng triết lý",
+          "html": "<p>Cấu trúc không chỉ là tình tiết — mà còn là sự phát triển TRIẾT LÝ. Hãy kiểm tra:</p><ul><li>Hồi 1: Nhân vật bám chặt vào niềm tin cũ (Quan điểm A hoặc B)</li><li>Hồi 2: Niềm tin cũ bị thử thách. Nhân vật bắt đầu thấy giá trị của quan điểm đối lập</li><li>Hồi 3: Nhân vật tổng hợp hai quan điểm hoặc chọn lập trường mới — thể hiện qua hành động cuối</li></ul><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 5:</h4><ul><li>Mô hình cấu trúc đã chọn</li><li>Phác thảo 4 hồi với chức năng rõ ràng</li><li>Danh sách 8 điểm ngoặt quan trọng</li><li>Bản đồ phát triển triết lý của nhân vật chính</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Viết synopsis (tóm tắt)",
+      "intro_html": "<p>Synopsis là bản tóm tắt 1-2 trang về toàn bộ câu chuyện. Đây là công cụ vô cùng quan trọng giúp bạn:</p><ul><li>Tổ chức ý tưởng và cấu trúc câu chuyện</li><li>Phát hiện sớm các vấn đề về cốt truyện, nhịp điệu, nhân vật</li><li>Làm rõ chủ đề trung tâm</li><li>Pitch câu chuyện cho nhà sản xuất, đạo diễn, nhà đầu tư</li><li>Là 'lộ trình' để bạn tham khảo trong suốt quá trình viết kịch bản</li></ul>",
+      "substeps": [
+        {
+          "id": "6.1",
+          "title": "Các yếu tố cần có trong Synopsis",
+          "html": "<ol><li>Giới thiệu nhân vật chính và bối cảnh</li><li>Tóm tắt cốt truyện với các bước ngoặt lớn</li><li>Mô tả xung đột giữa nhân vật chính và thế lực phản diện</li><li>Nhấn mạnh nguy cơ và sự trả giá của nhân vật</li><li>Thể hiện chủ đề của câu chuyện (qua hành động, không phải lời thoại)</li></ol>"
+        },
+        {
+          "id": "6.2",
+          "title": "Cấu trúc Synopsis 2 trang",
+          "html": "<p>| PHẦN | NỘI DUNG | | :---- | :---- | | Đoạn mở đầu(1 đoạn) | Câu mở đầu ấn tượng. Giới thiệu nhân vật chính, bối cảnh, và tình huống ban đầu. | | Hồi 1(1-2 đoạn) | Biến cố kích động. Nhân vật chính phản ứng và đưa ra quyết định bước vào hành trình. | | Hồi 2(2-3 đoạn) | Hành trình của nhân vật. Các trở ngại, đồng minh, kẻ thù. Midpoint. Nhân vật chạm đáy. | | Hồi 3(1-2 đoạn) | Cao trào và đối đầu cuối cùng. Sự thay đổi của nhân vật. Cách câu chuyện được giải quyết. | | Đoạn kết(1 đoạn) | Câu kết thúc gây ấn tượng mạnh. Thể hiện thế giới mới hoặc bài học của nhân vật. |</p>"
+        },
+        {
+          "id": "6.3",
+          "title": "Quy trình viết Synopsis",
+          "html": "<ol><li>Viết bản nháp đầu tiên — tự do, không lo về ngôn ngữ</li><li>Đọc lại và đánh giá tính mạch lạc — câu chuyện có dòng chảy không?</li><li>Đảm bảo mọi yếu tố quan trọng đều được đề cập (xem checklist 6.1)</li><li>Tinh chỉnh giọng điệu phù hợp với thể loại phim</li><li>Sử dụng ngôn ngữ sinh động — động từ mạnh, hình ảnh cụ thể</li><li>Loại bỏ chi tiết không cần thiết — chỉ giữ những gì thực sự quan trọng</li><li>Viết câu mở đầu và câu kết thúc thật ấn tượng</li><li>Nhờ người khác đọc và góp ý</li><li>Chỉnh sửa lần cuối — kiểm tra chính tả, ngữ pháp</li><li>Định dạng chuyên nghiệp — Courier 12pt, lề chuẩn</li></ol><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 6:</h4><ul><li>Synopsis hoàn chỉnh 1-2 trang, được chỉnh sửa và chuyên nghiệp</li><li>Câu mở đầu và kết thúc ấn tượng</li><li>Đã có ít nhất 1-2 phản hồi từ người khác</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Viết outline chi tiết",
+      "intro_html": "<p>Outline (đề cương) là bản phân cảnh chi tiết — danh sách tất cả các cảnh trong phim theo thứ tự, mỗi cảnh kèm mô tả ngắn về mục đích và nội dung. Đây là cầu nối giữa synopsis và kịch bản hoàn chỉnh.</p>",
+      "substeps": [
+        {
+          "id": "7.1",
+          "title": "Liệt kê các sự kiện chính theo thứ tự",
+          "html": "<p>Bắt đầu bằng cách liệt kê 30-60 sự kiện chính trong câu chuyện. Mỗi sự kiện sẽ trở thành một hoặc một vài cảnh trong kịch bản.</p>"
+        },
+        {
+          "id": "7.2",
+          "title": "Cấu trúc outline cho từng cảnh",
+          "html": "<p>Với mỗi cảnh, hãy ghi rõ:</p><ul><li>SỐ CẢNH: Đánh số tuần tự</li><li>BỐI CẢNH: NỘI/NGOẠI \\- ĐỊA ĐIỂM \\- THỜI GIAN (NGÀY/ĐÊM)</li><li>NHÂN VẬT có mặt: Ai xuất hiện trong cảnh</li><li>MỤC ĐÍCH: Cảnh này phục vụ gì cho câu chuyện?</li><li>XUNG ĐỘT: Ai muốn gì từ ai? Điều gì cản trở?</li><li>KẾT QUẢ: Cảnh kết thúc như thế nào? Câu chuyện tiến lên ra sao?</li></ul>"
+        },
+        {
+          "id": "7.3",
+          "title": "Kiểm tra mỗi cảnh",
+          "html": "<p>Trước khi tiếp tục, hãy kiểm tra mỗi cảnh bằng các câu hỏi sau:</p><ol><li>Tại sao các nhân vật lại xuất hiện trong cảnh này?</li><li>Cảnh này có thật sự cần thiết không? Nếu cắt đi, câu chuyện có ảnh hưởng không?</li><li>Điều gì trong cảnh này giúp câu chuyện tiến triển?</li><li>Nhân vật muốn gì trong cảnh?</li><li>Ai muốn điều gì từ ai?</li><li>Điều gì xảy ra nếu họ không đạt được điều đó?</li><li>Tại sao lại là NGAY LÚC NÀY trong câu chuyện?</li></ol>"
+        },
+        {
+          "id": "7.4",
+          "title": "Đảm bảo nhịp điệu",
+          "html": "<p>Đọc qua outline và kiểm tra:</p><ul><li>Có quá nhiều cảnh đối thoại liên tiếp không? Cần xen kẽ với hành động</li><li>Có cảnh nào bị 'chùng' giữa các điểm cao trào không?</li><li>Xung đột có TĂNG CẤP không? Mỗi thử thách phải khó hơn cái trước</li><li>Có khoảng nghỉ để khán giả 'thở' và tiếp nhận cảm xúc không?</li></ul><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 7:</h4><ul><li>Outline chi tiết với 30-60 cảnh</li><li>Mỗi cảnh có mục đích, xung đột, và kết quả rõ ràng</li><li>Nhịp điệu cân đối giữa các đoạn cao trào</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Viết bản nháp kịch bản đầu tiên",
+      "intro_html": "<p>Đây là lúc bạn ngồi xuống và viết. Quy tắc số 1: ĐỪNG CHỈNH SỬA KHI ĐANG VIẾT NHÁP ĐẦU. Mục tiêu của bản nháp đầu tiên là HOÀN THÀNH, không phải HOÀN HẢO.</p>",
+      "substeps": [
+        {
+          "id": "8.1",
+          "title": "Định dạng kịch bản chuẩn",
+          "html": "<p>| YẾU TỐ | ĐỊNH DẠNG | | :---- | :---- | | Font chữ | Courier 12pt | | Lề trang | Trên/Dưới: 1 inch | Trái: 1.5 inch | Phải: 1 inch | | Tiêu đề cảnh (Slugline) | CHỮ HOA. Dạng: NỘI/NGOẠI. ĐỊA ĐIỂM \\- THỜI GIAN | | Mô tả hành động | Thì hiện tại. Ngắn gọn. Chỉ tả những gì NHÌN/NGHE thấy. | | Tên nhân vật (đối thoại) | CHỮ HOA, căn giữa, trên dòng đối thoại. | | Đối thoại | Căn giữa, hẹp hơn lề mô tả. | | Một trang ≈ | Khoảng 1 phút phim |</p>"
+        },
+        {
+          "id": "8.2",
+          "title": "Nguyên tắc viết kịch bản",
+          "html": "<h4>Show, Don't Tell:</h4><p><em>Kịch bản là nghệ thuật của HÌNH ẢNH và ÂM THANH. Chỉ viết những gì khán giả có thể NHÌN THẤY hoặc NGHE THẤY. Không bao giờ viết suy nghĩ nội tâm trừ khi có cách thể hiện qua hành động.</em></p><h4>Đối thoại tốt:</h4><ul><li>Mỗi nhân vật có giọng nói riêng — đọc thầm là biết ai đang nói</li><li>Đối thoại luôn có XUNG ĐỘT — ai đó muốn gì từ ai đó</li><li>Đối thoại không nói thẳng — sử dụng subtext (lớp ý nghĩa ngầm)</li><li>Tránh thuyết giảng — đừng dùng nhân vật làm cái loa cho biên kịch</li><li>Cắt mọi câu thừa — mỗi dòng phải có lý do tồn tại</li></ul><h4>Mô tả hành động hiệu quả:</h4><ul><li>Ngắn gọn — đoạn mô tả hiếm khi dài quá 4 dòng</li><li>Sống động — dùng động từ mạnh, hình ảnh cụ thể</li><li>Có nhịp điệu — câu ngắn cho hành động nhanh, câu dài cho không khí</li><li>Tránh chỉ đạo máy quay — đó là việc của đạo diễn</li></ul>"
+        },
+        {
+          "id": "8.3",
+          "title": "Quy tắc viết nhanh bản nháp đầu",
+          "html": "<ol><li>Đặt mục tiêu hàng ngày — ví dụ 5 trang/ngày</li><li>Viết theo outline — đừng dừng lại để chỉnh sửa</li><li>Nếu bí, đánh dấu \\[TODO\\] và viết tiếp cảnh sau</li><li>Không đọc lại những gì đã viết cho đến khi hoàn thành</li><li>Giữ tinh thần — bản nháp đầu tiên LÚC NÀO CŨNG dở. Đó là điều bình thường</li></ol>"
+        },
+        {
+          "id": "8.4",
+          "title": "Độ dài kịch bản chuẩn",
+          "html": "<ul><li>Phim ngắn: 5-30 trang</li><li>Phim điện ảnh truyền thống: 90-120 trang</li><li>Phim hài: 90-100 trang</li><li>Phim drama: 100-120 trang</li><li>Phim sử thi/hành động lớn: 120-130 trang</li></ul><h4>📋 SẢN PHẨM CỦA GIAI ĐOẠN 8:</h4><ul><li>Bản nháp kịch bản đầu tiên hoàn chỉnh</li><li>Định dạng đúng chuẩn</li><li>Độ dài phù hợp với thể loại</li></ul>"
+        }
+      ]
+    },
+    {
+      "num": 9,
+      "title": "Tự đánh giá và viết lại (rewriting)",
+      "intro_html": "<p>Quy tắc bất di bất dịch của biên kịch: 'Writing is rewriting.' Một kịch bản tốt thường được viết lại 5-15 lần. Bản nháp đầu chỉ là khởi đầu — phép màu xảy ra ở các bản viết lại.</p>",
+      "substeps": [
+        {
+          "id": "9.1",
+          "title": "Để kịch bản 'nguội' trước khi đọc lại",
+          "html": "<p>Sau khi hoàn thành bản nháp đầu, hãy CẤT NÓ ĐI ít nhất 1-2 tuần. Làm việc khác. Khi quay lại, bạn sẽ đọc nó với đôi mắt mới và phát hiện ra những vấn đề mà trước đó bạn không thấy.</p>"
+        },
+        {
+          "id": "9.2",
+          "title": "Đọc và chẩn đoán",
+          "html": "<p>Đọc toàn bộ kịch bản trong một lần (như khán giả xem phim). Ghi chú nhưng KHÔNG SỬA. Sau khi đọc xong, dùng các câu hỏi chẩn đoán theo từng cấp độ:</p><h4>Cấp độ 1 — Xung đột triết lý:</h4><ul><li>Điều gì đang bị đe dọa trong câu chuyện?</li><li>Nếu nhân vật thành công/thất bại với mục tiêu, điều đó nói gì về triết lý của câu chuyện?</li><li>Điều này phản ánh gì về góc nhìn của tôi với cuộc sống?</li></ul><h4>Cấp độ 2 — Nhân vật:</h4><ul><li>Mỗi nhân vật giữ giá trị gì khiến họ rơi vào xung đột triết lý với người khác?</li><li>Niềm tin của nhân vật ảnh hưởng đến điều họ muốn như thế nào?</li><li>Các nhân vật có giữ những niềm tin đủ khác biệt để xung đột không?</li></ul><h4>Cấp độ 3 — Ý tưởng/Thể loại:</h4><ul><li>Câu chuyện có nằm trong thể loại cụ thể nào không?</li><li>Có quy tắc thể loại nào tôi cần lưu ý?</li><li>Khán giả mang tâm thế gì khi xem phim?</li></ul><h4>Cấp độ 4 — Cấu trúc:</h4><ul><li>Nhịp kể có tốt không?</li><li>Các cảnh có giúp câu chuyện tiến lên không?</li><li>Có quá nhiều thời gian chết hoặc đoạn rối rắm không?</li></ul><h4>Cấp độ 5 — Từng cảnh:</h4><ul><li>Tại sao các nhân vật xuất hiện trong cảnh này?</li><li>Cảnh này có thật sự cần thiết không?</li><li>Ai muốn điều gì từ ai?</li><li>Tại sao lại là NGAY LÚC NÀY?</li></ul>"
+        },
+        {
+          "id": "9.3",
+          "title": "Câu hỏi chẩn đoán cho từng hồi",
+          "html": "<h4>Hồi 1:</h4><ol><li>Nhân vật chính của bạn là ai?</li><li>Họ muốn gì? (Trong toàn bộ câu chuyện và riêng trong hồi 1?)</li><li>Tình huống bất ngờ nào buộc họ phải hành động?</li><li>Họ thích nghi với tình huống và tiến về mục tiêu như thế nào?</li><li>Họ đạt được điều họ muốn trong hồi 1 ra sao?</li><li>Điều đó khiến họ phải trả giá gì?</li><li>Họ tìm cách giải quyết xung đột như nào?</li><li>Hành động của họ thể hiện sự thay đổi ra sao?</li></ol><p>Áp dụng các câu hỏi tương tự cho Hồi 2A, Hồi 2B, và Hồi 3 — luôn tìm sự THAY ĐỔI từ hồi này sang hồi khác.</p>"
+        },
+        {
+          "id": "9.4",
+          "title": "Quy trình viết lại",
+          "html": "<ol><li>Pass 1 — CẤU TRÚC: Sửa các vấn đề lớn về cấu trúc, cốt truyện, nhân vật</li><li>Pass 2 — CẢNH: Xem lại từng cảnh, cắt bỏ cảnh thừa, gộp cảnh có thể gộp</li><li>Pass 3 — ĐỐI THOẠI: Tinh chỉnh từng dòng đối thoại, đảm bảo có subtext</li><li>Pass 4 — MÔ TẢ: Cải thiện ngôn ngữ mô tả, làm cho sống động hơn</li><li>Pass 5 — POLISH: Kiểm tra chính tả, ngữ pháp, định dạng</li></ol>"
+        },
+        {
+          "id": "9.5",
+          "title": "Nhận phản hồi từ người khác",
+          "html": "<p>Sau khi đã viết lại 2-3 lần, đưa kịch bản cho 3-5 người đọc — bao gồm:</p><ul><li>Một biên kịch khác (chuyên môn)</li><li>Một người trong ngành (đạo diễn, nhà sản xuất)</li><li>Một người không trong ngành (đại diện khán giả)</li></ul><h4>Quy tắc khi nhận phản hồi:</h4><ul><li>Lắng nghe — đừng tranh cãi hay biện minh</li><li>Tìm điểm chung — nếu nhiều người chỉ ra cùng một vấn đề, có thể đó là vấn đề thật</li><li>Không phải mọi góp ý đều đúng — bạn vẫn là tác giả, có quyền quyết định</li><li>Cảm ơn người đọc dù bạn không đồng ý</li></ul><h4>📋 SẢN PHẨM CUỐI CÙNG:</h4><ul><li>Kịch bản đã được viết lại nhiều lần</li><li>Đã có phản hồi từ ít nhất 3-5 người</li><li>Định dạng chuyên nghiệp, sẵn sàng pitch hoặc gửi</li><li>Bản logline và synopsis cập nhật đi kèm</li></ul>"
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "id": "A",
+      "title": "Worksheet xung đột triết lý",
+      "intro_html": "<p>Sử dụng worksheet này trong Giai đoạn 2 để xác định nền tảng triết lý của câu chuyện.</p>",
+      "sections": [
+        {
+          "title": "I. XUNG ĐỘT TRIẾT LÝ",
+          "html": "<p>Hai quan điểm đối lập (A vs B) mà câu chuyện của bạn sẽ khám phá là gì? (Chủ đề và phản chủ đề)</p><p>| QUAN ĐIỂM A | QUAN ĐIỂM B | | :---- | :---- | | \\[Viết quan điểm A của bạn ở đây\\] | \\[Viết quan điểm B của bạn ở đây\\] | | ƯU ĐIỂM: | ƯU ĐIỂM: | | NHƯỢC ĐIỂM: | NHƯỢC ĐIỂM: |</p>"
+        },
+        {
+          "title": "II. NHÂN VẬT VÀ NIỀM TIN",
+          "html": "<p>Với từng nhân vật chính, hãy điền thông tin sau:</p><p>| CÂU HỎI | TRẢ LỜI | | :---- | :---- | | Tên nhân vật: |  | | Quan điểm nào quan trọng với nhân vật? (A hay B?) |  | | Tại sao quan điểm đó quan trọng? (Quá khứ, tổn thương, giá trị?) |  | | Nhân vật MUỐN gì cụ thể? |  | | Mong muốn đó được thúc đẩy bởi quan điểm như thế nào? |  | | Nhân vật HÀNH ĐỘNG ra sao để đạt được điều mình muốn? |  |</p>"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Checklist 33 lỗi thường gặp",
+      "intro_html": "",
+      "categories": [
+        {
+          "title": "Lỗi về cấu trúc và xung đột",
+          "items": [
+            {
+              "n": 1,
+              "text": "Cảnh phim không có xung đột thật sự — Mỗi cảnh phải có ai đó muốn gì và bị cản trở"
+            },
+            {
+              "n": 2,
+              "text": "Xung đột được giải quyết quá dễ dàng — Nhân vật phải trả giá gì đó"
+            },
+            {
+              "n": 3,
+              "text": "Câu chuyện bắt đầu quá trễ — Xung đột phải có ngay từ đầu"
+            },
+            {
+              "n": 4,
+              "text": "Xung đột không tăng cấp — Mỗi thử thách phải khó hơn cái trước"
+            },
+            {
+              "n": 5,
+              "text": "Cốt truyện quá rối — Tập trung vào MỘT nhân vật chính, MỘT ý tưởng trung tâm"
+            },
+            {
+              "n": 6,
+              "text": "Không có câu hỏi lớn nào được giải quyết — Kết thúc bỏ ngỏ phải CÓ CHỦ ĐÍCH"
+            },
+            {
+              "n": 7,
+              "text": "Câu chuyện bị điều khiển bởi sự trùng hợp — Nhân vật phải tự xoay xở"
+            }
+          ]
+        },
+        {
+          "title": "Lỗi về nhân vật",
+          "items": [
+            {
+              "n": 8,
+              "text": "Hành động của nhân vật không hợp lý — Phải nhất quán với niềm tin và giá trị"
+            },
+            {
+              "n": 9,
+              "text": "Nhân vật không giống con người thật — Quan sát đời sống, học triết học, tâm lý"
+            },
+            {
+              "n": 10,
+              "text": "Nhân vật chính là khuôn mẫu cũ kỹ — Tạo người độc đáo qua hệ giá trị riêng"
+            },
+            {
+              "n": 11,
+              "text": "Phản diện biết mình là 'vai ác' — Phản diện phải tin điều họ làm là đúng"
+            },
+            {
+              "n": 12,
+              "text": "Nhân vật chính quá yếu — Phải cân sức với phản diện"
+            },
+            {
+              "n": 13,
+              "text": "Nhân vật chính quá giỏi, thắng dễ — Cần khuyết điểm và học từ thất bại"
+            }
+          ]
+        },
+        {
+          "title": "Lỗi về câu chuyện và thông điệp",
+          "items": [
+            {
+              "n": 14,
+              "text": "Khán giả thở dài 'Rồi sao nữa?' — Xác định lại giá trị triết lý"
+            },
+            {
+              "n": 15,
+              "text": "Kịch bản quá máy móc, theo công thức — Vấn đề là nhân vật rỗng, thiếu chiều sâu triết lý"
+            },
+            {
+              "n": 16,
+              "text": "Câu chuyện quá mỏng — Làm sâu hơn: nhân vật nhiều lớp, niềm tin mạnh hơn"
+            },
+            {
+              "n": 17,
+              "text": "Thông điệp quan trọng hơn câu chuyện — Thông điệp phải được THỬ THÁCH NGHIÊM TÚC"
+            },
+            {
+              "n": 18,
+              "text": "Nghĩ rằng đề tài 'nặng' \\= câu chuyện 'hay' — Chiều sâu đến từ nhân vật, không phải chủ đề"
+            }
+          ]
+        },
+        {
+          "title": "Lỗi về cao trào và hồi 3",
+          "items": [
+            {
+              "n": 19,
+              "text": "Kết phim không cao trào — Xét lại sự cân xứng giữa nhân vật chính và phản diện"
+            },
+            {
+              "n": 20,
+              "text": "Hồi 3 như là một phim khác — Cài manh mối từ đầu, giữ mâu thuẫn triết lý xuyên suốt"
+            },
+            {
+              "n": 21,
+              "text": "'Pha cứu nguy từ trên trời rơi xuống' (Deus Ex Machina) — Nhân vật phải tự tìm đường thoát"
+            }
+          ]
+        },
+        {
+          "title": "Lỗi về kỹ thuật viết",
+          "items": [
+            {
+              "n": 22,
+              "text": "Chỉ muốn cảnh hành động 'ngầu' — Cảnh hành động phải phục vụ câu chuyện"
+            },
+            {
+              "n": 23,
+              "text": "Ưa chuộng phong cách hơn nội dung — Câu chuyện là gốc"
+            },
+            {
+              "n": 24,
+              "text": "Quá nhiều hồi tưởng (flashback) — Cắt bỏ hầu hết backstory"
+            },
+            {
+              "n": 25,
+              "text": "Yếu tố kỳ ảo không rõ ràng — Giải thích quy luật và không phá vỡ"
+            },
+            {
+              "n": 26,
+              "text": "Kịch bản là sân chơi của cái tôi tác giả — Bỏ cái tôi, tập trung kể chuyện hay"
+            },
+            {
+              "n": 27,
+              "text": "Không có gì xảy ra cho đến cú twist — Câu chuyện hay không cần twist"
+            },
+            {
+              "n": 28,
+              "text": "Dụng cụ kể chuyện 'lòe loẹt' để lộ thông tin — Lồng thông tin vào xung đột"
+            }
+          ]
+        },
+        {
+          "title": "Lỗi về sáng tạo và tính độc đáo",
+          "items": [
+            {
+              "n": 29,
+              "text": "'Phim này tôi coi rồi mà?' — Nghiên cứu trước khi viết, đừng lặp lại"
+            },
+            {
+              "n": 30,
+              "text": "Câu chuyện chỉ ở một địa điểm và cạn ý — Tạo thêm nhân vật/chướng ngại liên quan đến triết lý"
+            },
+            {
+              "n": 31,
+              "text": "Xung đột là đánh nhau với 'kẻ lạ mặt không ai quan tâm' — Khán giả phải sợ cho nhân vật"
+            },
+            {
+              "n": 32,
+              "text": "Nhầm lẫn giữa ý tưởng hài hước và trò cười — Hài bắt nguồn từ nhân vật"
+            },
+            {
+              "n": 33,
+              "text": "Viết phim thể loại không có 'móc câu' riêng — Tìm điểm khác biệt"
+            }
+          ]
+        }
+      ],
+      "total": 33
+    },
+    {
+      "id": "C",
+      "title": "Câu hỏi chẩn đoán theo từng hồi",
+      "intro_html": "<p>Áp dụng bộ câu hỏi này cho mỗi hồi khi viết lại. Cùng một bộ câu hỏi giúp đảm bảo tính nhất quán và phát triển có hệ thống.</p>",
+      "sections": [
+        {
+          "title": "Bộ câu hỏi chuẩn cho mọi hồi",
+          "html": "<p>| \\# | CÂU HỎI | | :---- | :---- | | 1 | Nhân vật chính của bạn là ai? (Họ ở vị trí nào trong hành trình?) | | 2 | Họ muốn gì? (Trong toàn bộ câu chuyện và riêng trong hồi này?) | | 3 | Tình huống bất ngờ nào buộc họ phải hành động trong hồi này? | | 4 | Họ thích nghi với tình huống và tiến về mục tiêu như thế nào? | | 5 | Họ đạt được điều họ muốn trong hồi này ra sao, đồng thời tiến gần đến mục tiêu của toàn bộ câu chuyện? | | 6 | Điều đó khiến họ phải trả giá gì? | | 7 | Họ giải quyết xung đột như thế nào? (Hồi 3: Cao trào và cách giải quyết) | | 8 | Hành động của họ thể hiện sự thay đổi ra sao? Họ đã thay đổi như thế nào so với đầu hồi? |</p><p><em>Lưu ý: Sự THAY ĐỔI là yếu tố then chốt. Nếu nhân vật ở cuối hồi giống hệt như ở đầu hồi, hồi đó không có giá trị câu chuyện.</em></p>"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Quy trình chuyển thể (Adaptation)",
+      "intro_html": "<p>Nếu bạn đang chuyển thể từ tiểu thuyết, truyện ngắn, sự kiện có thật, hoặc nguồn khác, hãy làm theo quy trình bổ sung này.</p>",
+      "substeps": [
+        {
+          "id": "D.1",
+          "title": "Hiểu bản chất tác phẩm gốc",
+          "html": "<p>Đọc/nghiên cứu tác phẩm gốc nhiều lần. Trả lời:</p><ul><li>Đâu là TINH THẦN của tác phẩm? (Khác với tình tiết bề mặt)</li><li>Chủ đề trung tâm là gì?</li><li>Sự thật cảm xúc cốt lõi là gì?</li><li>Điều gì khiến tác phẩm này được yêu thích?</li></ul>"
+        },
+        {
+          "id": "D.2",
+          "title": "Phân biệt 'Sự thật' và 'Tinh thần của sự thật'",
+          "html": "<p>| SỰ THẬT THỰC TẾ | TINH THẦN CỦA SỰ THẬT | | :---- | :---- | | Ai, Cái gì, Khi nào, Ở đâu — các dữ kiện cụ thể, có thể kiểm chứng. | Bản chất, cảm xúc, chủ đề cốt lõi của câu chuyện thực — khó nắm bắt hơn nhưng quan trọng hơn. |</p><p><em>Trung thành với tinh thần sự thật quan trọng hơn trung thành với từng chi tiết. Bạn có thể thay đổi địa điểm, thời gian, thậm chí gộp nhiều nhân vật thành một — miễn là tinh thần được giữ nguyên.</em></p>"
+        },
+        {
+          "id": "D.3",
+          "title": "Xây dựng cốt truyện hấp dẫn",
+          "html": "<ol><li>Hiểu bản chất của câu chuyện</li><li>Chọn góc nhìn (ngôi thứ nhất, ngôi thứ ba hạn chế, toàn tri, đa góc nhìn)</li><li>Xác định xung đột chủ đề (Nhân vật vs Bản thân, vs Người khác, vs Xã hội, vs Thiên nhiên, vs Đa xung đột)</li><li>Tập trung vào hành trình chuyển đổi của nhân vật</li><li>Nắm bắt sự thật cảm xúc</li></ol>"
+        },
+        {
+          "id": "D.4",
+          "title": "Linh hoạt với cấu trúc",
+          "html": "<ul><li>Có thể thêm/bớt nhân vật, cảnh quay, bối cảnh</li><li>Có thể làm mới các nhân vật và yếu tố cốt truyện</li><li>Ưu tiên CUNG BẬC CẢM XÚC hơn ĐỘ CHÍNH XÁC THỜI GIAN</li><li>Tập trung vào những khoảnh khắc quan trọng, bỏ qua những đoạn không cần thiết</li></ul>"
+        },
+        {
+          "id": "D.5",
+          "title": "Bí quyết chuyển thể thành công",
+          "html": "<ol><li>Trung thành với SỰ THẬT CẢM XÚC, không phải sự thật chi tiết</li><li>Các nhân vật được xây dựng trên TINH THẦN sự thật</li><li>Sử dụng CHỦ ĐỀ làm trọng tâm thống nhất cho mọi yếu tố</li><li>Đảm bảo mọi thay đổi vẫn TRUNG THÀNH với chủ đề và sự thật cảm xúc của tác phẩm gốc</li><li>Giữ nguyên tinh thần của tác phẩm gốc TRONG KHI vẫn có tự do sáng tạo</li></ol><p>    <em>Chuyển thể thành công không phụ thuộc vào việc thêm, bớt hay điều chỉnh nội dung. Mà phụ thuộc vào việc bạn có nắm bắt và thể hiện được TINH THẦN của tác phẩm gốc hay không.</em></p>"
+        }
+      ]
+    }
+  ],
+  "conclusion_html": "<h3>Những điều cần ghi nhớ</h3><ol><li>XUNG ĐỘT TRIẾT LÝ là trái tim của mọi câu chuyện hay</li><li>NHÂN VẬT phải có niềm tin, mong muốn, và phải trả giá để thay đổi</li><li>CẤU TRÚC là khung xương — không phải nhà tù</li><li>WRITING IS REWRITING — bản nháp đầu chỉ là khởi đầu</li><li>PHẢN HỒI từ người khác là quà tặng — hãy nhận với lòng biết ơn</li><li>KIÊN TRÌ là phẩm chất quan trọng nhất của biên kịch</li></ol><h3>Lời cuối</h3><p><em>Dù câu chuyện của bạn có độc đáo đến đâu, những nguyên tắc cơ bản của kể chuyện vẫn không thay đổi. Hãy học chúng, vận dụng chúng, và rồi PHÁ VỠ chúng — khi bạn đã đủ giỏi để biết tại sao.</em></p><p><strong>── HẾT ──</strong></p><p><em>Chúc bạn viết được những câu chuyện đáng kể.</em></p>"
+}

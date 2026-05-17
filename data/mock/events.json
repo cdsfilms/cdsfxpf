@@ -1,0 +1,10 @@
+[
+  { "date": "2025-06-15", "project_id": "p_001", "kind": "stage_done", "text": "Hoàn thành Synopsis" },
+  { "date": "2025-07-01", "project_id": "p_001", "kind": "milestone", "text": "Bắt đầu Outline chi tiết" },
+  { "date": "2025-06-05", "project_id": "p_002", "kind": "milestone", "text": "Khởi động dự án" },
+  { "date": "2025-07-01", "project_id": "p_003", "kind": "stage_done", "text": "Đọc và chẩn đoán bản nháp 1" },
+  { "date": "2025-04-25", "project_id": "p_004", "kind": "stage_done", "text": "Hiểu công thức Logline" },
+  { "date": "2025-02-01", "project_id": "p_005", "kind": "milestone", "text": "Hoàn tất nghiên cứu tác phẩm gốc" },
+  { "date": "2024-12-20", "project_id": "p_006", "kind": "stage_done", "text": "Hoàn thành kịch bản — gửi liên hoan phim" },
+  { "date": "2025-04-01", "project_id": "p_007", "kind": "milestone", "text": "Bắt đầu phác thảo cấu trúc" }
+]

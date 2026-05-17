@@ -1,0 +1,5 @@
+id,member_id,title,type,logline,start_date,target_date,status,current_stage,docs_url,logline_doc,synopsis_doc,outline_doc,draft_doc,notes
+p_001,m_anh,Tieng vong thang Bay,short,Mot nguoi dan ong tim lai ky uc tuoi tho qua nhung buc thu cu.,2025-01-15,2025-08-01,active,,,,,,,
+p_002,m_linh,Nga tu khong den,feature,Bon nguoi la gap nhau trong mot vu tai nan dem khuya.,2025-02-01,2025-12-01,active,,,,,,,
+p_003,m_khoa,Mua dau mua,short,Co gai tre doi mat voi quyet dinh roi bo que huong.,2025-03-10,2025-09-30,active,,,,,,,
+p_004,m_minh,Hoi ky cua gio,adaptation,Chuyen the tu tieu thuyet cung ten — cuoc doi mot nhac si mu.,2024-06-01,2025-06-01,done,,,,,,,

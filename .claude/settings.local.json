@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/build_process_json.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -m http.server 8765)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8765/index.html)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8765/data/process.json)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8765/data/mock/projects.json)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:8765/js/home.js)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(sed -i '' 's|https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400\\\\&family=Inter:wght@400;500;600\\\\&family=JetBrains+Mono:wght@400;500\\\\&display=swap|https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700\\\\&family=Inter:wght@400;500;600\\\\&family=JetBrains+Mono:wght@400;500\\\\&display=swap|g' /Users/singularity/Projects/cdsfxpf/*.html)",
+      "Bash(curl -s http://localhost:8765/assets/style.css)",
+      "Bash(grep -n '\"[A-Z][a-z]\\\\{2,\\\\}\\\\|`[A-Z][a-z]\\\\{2,\\\\}' /Users/singularity/Projects/cdsfxpf/js/kanban.js /Users/singularity/Projects/cdsfxpf/js/home.js /Users/singularity/Projects/cdsfxpf/js/members.js /Users/singularity/Projects/cdsfxpf/js/member.js /Users/singularity/Projects/cdsfxpf/js/project.js /Users/singularity/Projects/cdsfxpf/js/stats.js /Users/singularity/Projects/cdsfxpf/js/timeline.js)",
+      "Bash(grep -v '^\\\\s*$')",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

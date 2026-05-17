@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header id="site-nav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bảng tổng quan</h1>
+      <p class="lead">Theo dõi hành trình của từng dự án — từ ý tưởng đầu tiên đến kịch bản hoàn chỉnh — qua 9 giai đoạn và 33 bước thực hành.</p>
+    </section>
+
+    <div id="kpis"></div>
+
+    <section class="mt-4">
+      <h2>Truy cập nhanh</h2>
+      <div class="grid grid-3 mt-2">
+        <a class="card" href="kanban.html">
+          <h3>Bảng Kanban</h3>
+          <p class="muted">Tất cả dự án đang viết, sắp xếp theo giai đoạn — để xem ai đang ở đâu.</p>
+        </a>
+        <a class="card" href="members.html">
+          <h3>Thành viên</h3>
+          <p class="muted">Danh sách biên kịch trong câu lạc bộ và tiến độ tổng hợp của họ.</p>
+        </a>
+        <a class="card" href="process.html">
+          <h3>Quy trình viết kịch bản</h3>
+          <p class="muted">Cẩm nang 9 giai đoạn và các phụ lục — worksheet, checklist 33 lỗi, quy trình chuyển thể.</p>
+        </a>
+        <a class="card" href="timeline.html">
+          <h3>Lịch trình &amp; deadline</h3>
+          <p class="muted">Dự án trễ hạn, sắp tới hạn, và những cột mốc gần kề.</p>
+        </a>
+        <a class="card" href="stats.html">
+          <h3>Thống kê</h3>
+          <p class="muted">Biểu đồ tổng quan: số dự án theo giai đoạn, bảng xếp hạng thành viên năng nổ.</p>
+        </a>
+        <a class="card" href="members.html">
+          <h3>Bắt đầu dự án mới?</h3>
+          <p class="muted">Đọc <a href="process.html#stage-1">Giai đoạn 1 — Phát triển ý tưởng cốt lõi</a> trước khi mở Google Sheet.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <h2>Dự án đang viết</h2>
+      <div id="active-projects" class="grid grid-3 mt-2"></div>
+    </section>
+
+    <section class="mt-4">
+      <h2>Hoàn thành gần đây</h2>
+      <div id="done-projects" class="grid grid-3 mt-2"></div>
+    </section>
+  </main>
+
+  <footer id="site-foot"></footer>
+
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

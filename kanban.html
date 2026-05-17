@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng Kanban</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header id="site-nav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Bảng Kanban</h1>
+      <p class="lead">Mỗi dự án nằm ở cột giai đoạn hiện tại. Cuộn ngang để xem cả 9 giai đoạn.</p>
+    </section>
+
+    <div class="filter-bar mt-3">
+      <label>Thành viên
+        <select id="f-member"><option value="">— tất cả —</option></select>
+      </label>
+      <label>Thể loại
+        <select id="f-type">
+          <option value="">— tất cả —</option>
+          <option value="short">Phim ngắn</option>
+          <option value="feature">Phim dài</option>
+          <option value="series">Phim bộ</option>
+          <option value="adaptation">Chuyển thể</option>
+        </select>
+      </label>
+      <label>Trạng thái
+        <select id="f-status">
+          <option value="active">Đang viết</option>
+          <option value="">Tất cả</option>
+          <option value="paused">Tạm dừng</option>
+          <option value="done">Hoàn thành</option>
+          <option value="shelved">Gác lại</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="f-overdue"> Chỉ trễ hạn</label>
+    </div>
+
+    <div id="board" class="kanban"></div>
+  </main>
+
+  <footer id="site-foot"></footer>
+
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/kanban.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "m_minh",
+    "name": "Lê Hoàng Minh",
+    "role": "Biên kịch chính",
+    "avatar_url": "",
+    "joined": "2024-09-01",
+    "bio": "Yêu phim noir và những câu chuyện về sự thật bị che giấu."
+  },
+  {
+    "id": "m_anh",
+    "name": "Nguyễn Phương Anh",
+    "role": "Mentor",
+    "avatar_url": "",
+    "joined": "2024-06-15",
+    "bio": "Cầm bút mười năm, mê viết về phụ nữ và những lựa chọn khó."
+  },
+  {
+    "id": "m_khoa",
+    "name": "Trần Đăng Khoa",
+    "role": "Học viên",
+    "avatar_url": "",
+    "joined": "2025-01-10",
+    "bio": "Mới bắt đầu, đang viết kịch bản phim ngắn đầu tay."
+  },
+  {
+    "id": "m_linh",
+    "name": "Đỗ Thuỳ Linh",
+    "role": "Biên kịch",
+    "avatar_url": "",
+    "joined": "2024-11-20",
+    "bio": "Quan tâm đến phim chuyển thể từ văn học Việt Nam."
+  }
+]

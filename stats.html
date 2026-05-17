@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thống kê</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header id="site-nav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Thống kê</h1>
+      <p class="lead">Tổng quan câu lạc bộ — dự án theo giai đoạn, thành viên năng nổ, và tỉ lệ hoàn thành.</p>
+    </section>
+
+    <section class="grid grid-4 mt-3" id="stats-kpis"></section>
+
+    <section class="split mt-4">
+      <div class="panel">
+        <h3>Dự án theo giai đoạn</h3>
+        <div id="chart-stages" class="bar-chart"></div>
+      </div>
+      <div class="panel">
+        <h3>Trạng thái dự án</h3>
+        <div id="chart-status" class="bar-chart"></div>
+      </div>
+    </section>
+
+    <section class="split mt-3">
+      <div class="panel">
+        <h3>Bảng xếp hạng — theo tổng tiến độ</h3>
+        <ol class="leader" id="leader-progress"></ol>
+      </div>
+      <div class="panel">
+        <h3>Bảng xếp hạng — số dự án hoàn thành</h3>
+        <ol class="leader" id="leader-done"></ol>
+      </div>
+    </section>
+
+    <section class="panel mt-3">
+      <h3>Dự án theo thể loại</h3>
+      <div id="chart-types" class="bar-chart"></div>
+    </section>
+  </main>
+
+  <footer id="site-foot"></footer>
+
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/stats.js"></script>
+</body>
+</html>
