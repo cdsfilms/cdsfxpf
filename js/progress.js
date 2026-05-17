@@ -52,15 +52,16 @@ export function overallPct(progressRow, stages) {
   return pcts.reduce((a, b) => a + b, 0) / pcts.length;
 }
 
-// If the sheet's `current_stage` is blank, derive it: the lowest stage that's
-// not yet 100% done — i.e. the stage actively being worked on. If everything
-// is done, return 9. If nothing is started, return 1.
+// If the sheet's `current_stage` is blank, derive it: the highest stage with
+// at least one substep started. Matches the user's actual working position
+// even when earlier stages have gaps. Returns 1 if nothing is started.
 export function deriveCurrentStage(progressRow, stages) {
   if (!progressRow) return 1;
+  let current = 1;
   for (const stage of stages) {
-    if (stagePct(progressRow, stage) < 1) return stage.num;
+    if (stageHasAnyProgress(progressRow, stage)) current = stage.num;
   }
-  return stages.length;
+  return current;
 }
 
 // Date helpers
