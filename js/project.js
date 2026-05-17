@@ -121,20 +121,45 @@ function worksheetPanel(stage) {
 
 function errorsPanel(p, process) {
   const appB = process.appendices.find((a) => a.id === "B");
-  if (!appB || !p.errors) return "";
-  // Flatten into [{n, text, checked}]
-  const flat = appB.categories.flatMap((c) => c.items.map((it) => ({
-    n: it.n, text: it.text, checked: !!p.errors[`e${it.n}`],
-  })));
-  const checked = flat.filter((x) => x.checked).length;
-  if (checked === 0 && p.currentStage < 9) return "";
+  if (!appB) return "";
+  const anyChecked = p.errors && Object.values(p.errors).some((v) => cellStatus(v) === "done");
+  if (p.currentStage < 9 && !anyChecked) return "";
+
+  const allItems = appB.categories.flatMap((c) => c.items);
+  const checkedTotal = allItems.filter((it) => cellStatus(p.errors?.[`e${it.n}`]) === "done").length;
+  const pct = Math.round((checkedTotal / allItems.length) * 100);
+
+  const rows = appB.categories.map((cat) => {
+    const catChecked = cat.items.filter((it) => cellStatus(p.errors?.[`e${it.n}`]) === "done").length;
+    const cells = cat.items.map((it) => {
+      const st = cellStatus(p.errors?.[`e${it.n}`]);
+      const cls = st === "done" ? "done" : "";
+      return `<span class="cell ${cls}" tabindex="0">
+        e${it.n}
+        <span class="tip">${escapeHtml(it.text)}</span>
+      </span>`;
+    }).join("");
+    return `
+      <div class="row-label">
+        <strong>${escapeHtml(cat.title)}</strong>
+        <small class="muted">${catChecked}/${cat.items.length}</small>
+      </div>
+      <div class="row-cells">${cells}</div>
+    `;
+  }).join("");
+
   return `
     <div class="panel mt-3">
-      <h3>Checklist 33 lỗi <span class="muted small">(${checked}/${flat.length})</span></h3>
-      <ol style="padding-left: 1.6em;">
-        ${flat.map((x) => `<li style="opacity:${x.checked ? 1 : .45};">${x.checked ? "✓ " : "○ "}${x.text}</li>`).join("")}
-      </ol>
-      <p class="mt-1"><a href="process.html#appendix-b">Xem Phụ lục B →</a></p>
+      <h3>Giai đoạn Viết lại — Checklist 33 lỗi <span class="muted small">(${checkedTotal}/33)</span></h3>
+      <div class="bar mb-2"><span style="width:${pct}%;"></span></div>
+      <div class="matrix mt-2">
+        ${rows}
+      </div>
+      <p class="muted small mt-2">
+        <span class="cell done" style="min-width:32px;">—</span> đã kiểm tra
+        &nbsp;<span class="cell" style="min-width:32px;">—</span> chưa kiểm tra
+      </p>
+      <p class="mt-1"><a href="process.html#appendix-b">Xem Phụ lục B — mô tả chi tiết →</a></p>
     </div>
   `;
 }
