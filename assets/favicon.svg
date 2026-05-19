@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Rounded square bg — warm paper -->
+  <rect width="32" height="32" rx="7" fill="#FDF9F2"/>
+
+  <!-- Clapper top bar (dark) -->
+  <rect x="4" y="6" width="24" height="9" rx="2.5" fill="#1F1B17"/>
+
+  <!-- Classic diagonal stripe pattern on top bar -->
+  <clipPath id="cp"><rect x="4" y="6" width="24" height="9" rx="2.5"/></clipPath>
+  <g clip-path="url(#cp)">
+    <rect x="-2"  y="4" width="5.5" height="14" fill="#FDF9F2" opacity="0.88" transform="skewX(-25)"/>
+    <rect x="7"   y="4" width="5.5" height="14" fill="#FDF9F2" opacity="0.88" transform="skewX(-25)"/>
+    <rect x="16"  y="4" width="5.5" height="14" fill="#FDF9F2" opacity="0.88" transform="skewX(-25)"/>
+    <rect x="25"  y="4" width="5.5" height="14" fill="#FDF9F2" opacity="0.88" transform="skewX(-25)"/>
+  </g>
+
+  <!-- Hinge line between clapper + body -->
+  <rect x="4" y="14" width="24" height="1.5" fill="#C46858"/>
+
+  <!-- Clapper body — dusty rose -->
+  <rect x="4" y="15" width="24" height="12" rx="2.5" fill="#C46858"/>
+
+  <!-- Script text lines on body -->
+  <rect x="7"  y="18.5" width="18" height="1.5" rx="1" fill="#FDF9F2" opacity="0.55"/>
+  <rect x="7"  y="21.5" width="13" height="1.5" rx="1" fill="#FDF9F2" opacity="0.55"/>
+  <rect x="7"  y="24.5" width="9"  height="1.5" rx="1" fill="#FDF9F2" opacity="0.35"/>
+</svg>
