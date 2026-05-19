@@ -91,12 +91,12 @@ function matrixRow(p, stage) {
             </span>`;
   }).join("");
   return `
-    <div class="row-label">
+    <div class="row-label sc-${stage.num}">
       <strong>GĐ ${stage.num}</strong>
       <small>${escapeHtml(stage.title)}</small>
       <small class="muted">${pct}%</small>
     </div>
-    <div class="row-cells">${cells}</div>
+    <div class="row-cells sc-${stage.num}">${cells}</div>
   `;
 }
 

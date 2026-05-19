@@ -573,16 +573,24 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); text-de
 .matrix .row-label {
   display: flex; flex-direction: column; justify-content: center;
   font-family: var(--font-mono); font-size: .74rem; color: var(--text-muted); font-weight: 500;
+  border-left: 3px solid var(--sc, var(--border-2));
+  padding-left: .5rem; border-radius: 2px;
 }
+.matrix .row-label strong { color: color-mix(in srgb, var(--sc, var(--text-muted)) 90%, black); }
 .matrix .row-label small { font-family: var(--font-sans); font-size: .65rem; }
-.matrix .row-cells { display: flex; gap: 6px; flex-wrap: wrap; }
+.matrix .row-cells { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
 .matrix .cell {
   flex: 0 0 auto; min-width: 54px; padding: .32rem .5rem;
   border-radius: 7px; background: var(--bg-2); border: 1px solid var(--border);
   font-family: var(--font-mono); font-size: .7rem; color: var(--text-muted);
-  cursor: help; position: relative;
+  cursor: help; position: relative; text-align: center;
 }
-.matrix .cell.done { background: var(--mint-lt); color: var(--mint-2); border-color: var(--mint); }
+.matrix .cell.done {
+  background: color-mix(in srgb, var(--sc, var(--mint)) 14%, white);
+  color: color-mix(in srgb, var(--sc, var(--mint)) 80%, black);
+  border-color: color-mix(in srgb, var(--sc, var(--mint)) 40%, transparent);
+  font-weight: 600;
+}
 .matrix .cell.wip  { background: var(--peach-lt); color: var(--peach-2); border-color: var(--peach); }
 .matrix .cell:hover { outline: 2px solid var(--primary); outline-offset: 1px; }
 .matrix .cell .tip {
@@ -868,15 +876,31 @@ details.substep[open] .substep-arrow { transform: rotate(90deg); }
 
 /* ── Stats ──────────────────────────────────────────────────── */
 
-.bar-chart { display: grid; gap: .4rem; }
-.bar-chart .bc-row { display: grid; grid-template-columns: 200px 1fr 40px; align-items: center; gap: .65rem; }
-.bar-chart .bc-row .bc-label { color: var(--text-2); font-size: .85rem; }
-.bar-chart .bc-row .bc-track { height: 12px; background: var(--bg-2); border-radius: 999px; overflow: hidden; }
+.bar-chart { display: grid; gap: .5rem; }
+.bar-chart .bc-row { display: grid; grid-template-columns: 1fr 120px 32px; align-items: center; gap: .65rem; }
+.bar-chart .bc-row .bc-label {
+  color: var(--text-2); font-size: .83rem;
+  display: flex; align-items: center; gap: .45rem; min-width: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.bar-chart .bc-badge {
+  display: inline-grid; place-items: center;
+  width: 22px; height: 22px; border-radius: 50%;
+  color: #fff; font-family: var(--font-mono); font-size: .68rem; font-weight: 700;
+  flex-shrink: 0;
+}
+.bar-chart .bc-row .bc-track { height: 14px; background: var(--bg-2); border-radius: 999px; overflow: hidden; }
 .bar-chart .bc-row .bc-fill {
   height: 100%; border-radius: 999px;
-  background: linear-gradient(90deg, var(--wc-1) 0%, var(--wc-4) 50%, var(--wc-3) 100%);
+  background: var(--primary);
+  transition: width .4s ease;
 }
-.bar-chart .bc-row .bc-num { text-align: right; font-family: var(--font-mono); color: var(--text-muted); font-size: .8rem; }
+.bar-chart .bc-row .bc-num {
+  text-align: right; font-family: var(--font-mono);
+  color: var(--text-muted); font-size: .82rem; font-weight: 600;
+}
+/* override grid-4 on kpi box in stats — kpi-strip handles its own layout */
+#stats-kpis.grid { display: block; }
 
 .leader { list-style: none; padding: 0; margin: 0; }
 .leader li { display: flex; align-items: center; gap: .8rem; padding: .52rem 0; border-top: 1px solid var(--border); }
