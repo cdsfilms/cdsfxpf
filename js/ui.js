@@ -27,10 +27,22 @@ export function initials(name) {
   return (first[0] + (last[0] || "")).toUpperCase();
 }
 
+// Convert any Google Drive share/view link to a direct thumbnail URL.
+// Handles: /file/d/ID/view, /open?id=ID, /uc?id=ID, lh3 links → passthrough.
+function driveImgUrl(url) {
+  if (!url) return url;
+  const fileId = url.match(/\/file\/d\/([^/?#]+)/)?.[1]
+    || url.match(/[?&]id=([^&]+)/)?.[1];
+  if (fileId) return `https://lh3.googleusercontent.com/d/${fileId}`;
+  return url; // already direct (lh3, imgur, etc.)
+}
+
 export function avatarHTML(member, size = "sm") {
   if (!member) return `<span class="avatar avatar-${size}">?</span>`;
   if (member.avatar_url) {
-    return `<img class="avatar avatar-${size}" src="${escapeHtml(member.avatar_url)}" alt="${escapeHtml(member.name)}">`;
+    const src = driveImgUrl(member.avatar_url);
+    return `<img class="avatar avatar-${size}" src="${escapeHtml(src)}" alt="${escapeHtml(member.name)}"
+      onerror="this.outerHTML='<span class=\\'avatar avatar-${size}\\'>${escapeHtml(initials(member.name))}</span>'">`;
   }
   return `<span class="avatar avatar-${size}">${escapeHtml(initials(member.name))}</span>`;
 }
