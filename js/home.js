@@ -42,12 +42,12 @@ async function main() {
       </div>
     `;
 
-    const activeList = projects.filter((p) => p.status === "active").slice(0, 6);
+    const activeList = projects.filter((p) => p.status === "active");
     active.innerHTML = activeList.length
       ? activeList.map((p) => projectCardHTML(p, stages)).join("")
       : `<p class="muted">Chưa có dự án đang viết.</p>`;
 
-    const doneList = projects.filter((p) => p.status === "done").slice(0, 3);
+    const doneList = projects.filter((p) => p.status === "done");
     done.innerHTML = doneList.length
       ? doneList.map((p) => projectCardHTML(p, stages)).join("")
       : `<p class="muted">Chưa có dự án nào hoàn thành — hãy bắt đầu nhé!</p>`;
