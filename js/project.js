@@ -45,6 +45,7 @@ function render(root, p, process) {
         <span class="chip status-${p.status}">${escapeHtml(statusLabel(p.status))}</span>
         ${deadlineChipHTML(p)}
         ${p.rewriteTimes > 0 ? `<span class="chip rewrite" title="Số lần đã viết lại toàn bộ kịch bản">↻ ${p.rewriteTimes} lần viết lại</span>` : ""}
+        ${p.security ? `<span class="chip chip-lock">🔒 Bảo mật</span>` : ""}
         ${p.start_date ? `<span class="small muted">Bắt đầu ${formatDateVN(p.start_date)}</span>` : ""}
         ${p.target_date ? `<span class="small muted">Hạn ${formatDateVN(p.target_date)}</span>` : ""}
       </div>
@@ -166,12 +167,25 @@ function errorsPanel(p, process) {
 }
 
 function docLinksPanel(p) {
+  // Security: replace all links with a contact notice
+  if (p.security) {
+    const author = p.member ? `<a href="member.html?id=${encodeURIComponent(p.member.id)}">${escapeHtml(p.member.name)}</a>` : "tác giả";
+    return `
+      <div class="panel panel-lock">
+        <h3>🔒 Tài liệu — Bảo mật</h3>
+        <p class="muted small">Dự án này được bảo mật theo yêu cầu của tác giả.</p>
+        <p class="small">Vui lòng liên hệ ${author} nếu cần biết thêm chi tiết.</p>
+      </div>
+    `;
+  }
+
   const ICONS = [
     ["docs_url",     "📁", "Thư mục dự án"],
     ["logline_doc",  "L",  "Logline"],
     ["synopsis_doc", "S",  "Synopsis"],
     ["outline_doc",  "O",  "Outline"],
     ["draft_doc",    "D",  "Bản nháp"],
+    ["final_doc",    "✦",  "Bản hoàn chỉnh"],
   ];
   const present = ICONS.filter(([k]) => p[k]);
   if (present.length === 0) return `
@@ -197,6 +211,7 @@ function docLinksPanel(p) {
 }
 
 function notesPanel(p) {
+  if (p.security) return ""; // hide notes for secured projects
   if (!p.notes || !p.notes.trim()) return "";
   return `
     <div class="panel mt-3">

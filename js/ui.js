@@ -109,12 +109,18 @@ export function deadlineChipHTML(project) {
 }
 
 export function docIconsHTML(project) {
+  // Security: hide all doc links, show lock icon instead
+  if (project.security) {
+    const author = project.member?.name ? escapeHtml(project.member.name) : "tác giả";
+    return `<span class="doc-locked" title="Dự án bảo mật — liên hệ ${author}">🔒</span>`;
+  }
   const ICONS = [
     ["docs_url",     "📁", "Thư mục dự án"],
     ["logline_doc",  "L",  "Logline"],
     ["synopsis_doc", "S",  "Synopsis"],
     ["outline_doc",  "O",  "Outline"],
     ["draft_doc",    "D",  "Bản nháp"],
+    ["final_doc",    "F",  "Bản hoàn chỉnh"],
   ];
   const items = ICONS
     .filter(([k]) => project[k])
@@ -132,13 +138,16 @@ export function projectCardHTML(project, stages) {
   const href = `project.html?id=${encodeURIComponent(project.id)}`;
   return `
     <div class="card project-card" data-href="${href}" tabindex="0" role="link">
-      <a class="title" href="${href}">${escapeHtml(project.title)}</a>
+      <a class="title" href="${href}">${escapeHtml(project.title)}${project.security ? " 🔒" : ""}</a>
       <span class="by">
         ${avatarHTML(member, "sm")}
         ${escapeHtml(member?.name || "—")}
         <span class="badge ${typeBadgeClass(project.type)}">${escapeHtml(typeLabel(project.type))}</span>
       </span>
-      ${project.logline ? `<span class="logline">${escapeHtml(project.logline)}</span>` : ""}
+      ${project.security
+        ? `<span class="logline security-note">🔒 Dự án bảo mật — liên hệ tác giả để biết thêm.</span>`
+        : (project.logline ? `<span class="logline">${escapeHtml(project.logline)}</span>` : "")
+      }
       ${stageStripHTML(project, stages)}
       <div class="meta">
         <span class="muted">GĐ ${project.currentStage} • ${Math.round(project.overall * 100)}%</span>
