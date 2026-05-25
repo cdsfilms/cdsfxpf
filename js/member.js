@@ -85,7 +85,7 @@ function projectRow(p, stages) {
       ${p.logline ? `<p class="logline">${escapeHtml(p.logline)}</p>` : ""}
       ${stageStripHTML(p, stages)}
       <div class="row mt-1">
-        <span class="muted small">GĐ ${p.currentStage} • ${Math.round(p.overall * 100)}% • bắt đầu ${formatDateVN(p.start_date)}</span>
+        <span class="muted small">GĐ ${p.currentStage} • ${Math.round(p.overall * 100)}%${p.rewriteTimes > 0 ? ` • ↻ ${p.rewriteTimes} lần viết lại` : ""}${p.start_date ? ` • bắt đầu ${formatDateVN(p.start_date)}` : ""}</span>
         <span class="spacer"></span>
         ${docIconsHTML(p)}
       </div>

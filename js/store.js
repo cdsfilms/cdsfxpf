@@ -44,6 +44,7 @@ async function build() {
     p.errors = errorsByProject.get(p.id) || null;
     p.stagePcts = allStagePcts(p.progress, process.stages);
     p.overall = overallPct(p.progress, process.stages);
+    p.rewriteTimes = Number(p.progress?.rewrite_times) || 0;
     // Sheet column can override; otherwise derive.
     const fromSheet = Number(p.current_stage);
     p.currentStage = Number.isInteger(fromSheet) && fromSheet >= 1 && fromSheet <= process.stages.length

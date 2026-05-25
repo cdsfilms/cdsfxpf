@@ -85,6 +85,7 @@ function miniCard(project, stages) {
       ${currentStageSubstepBarHTML(project, stages)}
       <div class="row">
         <span class="muted small">${Math.round(project.overall * 100)}%</span>
+        ${project.rewriteTimes > 0 ? `<span class="rewrite-badge" title="Đã viết lại ${project.rewriteTimes} lần">↻${project.rewriteTimes}</span>` : ""}
         <span class="spacer"></span>
         ${deadlineChipHTML(project)}
       </div>

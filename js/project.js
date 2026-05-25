@@ -44,6 +44,7 @@ function render(root, p, process) {
         <span class="badge ${typeBadgeClass(p.type)}">${escapeHtml(typeLabel(p.type))}</span>
         <span class="chip status-${p.status}">${escapeHtml(statusLabel(p.status))}</span>
         ${deadlineChipHTML(p)}
+        ${p.rewriteTimes > 0 ? `<span class="chip rewrite" title="Số lần đã viết lại toàn bộ kịch bản">↻ ${p.rewriteTimes} lần viết lại</span>` : ""}
         ${p.start_date ? `<span class="small muted">Bắt đầu ${formatDateVN(p.start_date)}</span>` : ""}
         ${p.target_date ? `<span class="small muted">Hạn ${formatDateVN(p.target_date)}</span>` : ""}
       </div>

@@ -399,6 +399,23 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); text-de
 .chip.status-done    { background: var(--mint-lt); color: var(--mint-2); }
 .chip.status-paused  { background: var(--bg-2); color: var(--text-muted); }
 .chip.status-shelved { background: var(--bg-2); color: var(--text-muted); }
+.chip.rewrite {
+  background: rgba(139,126,192,.13);
+  color: var(--wc-5);
+  border: 1px solid rgba(139,126,192,.25);
+}
+
+/* Compact rewrite badge for kanban cards */
+.rewrite-badge {
+  display: inline-flex; align-items: center;
+  padding: .1rem .4rem; border-radius: 999px;
+  font-size: .65rem; font-weight: 700;
+  background: rgba(139,126,192,.13);
+  color: var(--wc-5);
+  border: 1px solid rgba(139,126,192,.25);
+  letter-spacing: -.01em;
+  flex-shrink: 0;
+}
 
 /* ── Stage strip — each of 9 stages its own watercolour hue ── */
 
