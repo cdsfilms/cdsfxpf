@@ -186,24 +186,4 @@ export function showError(target, err) {
   target.innerHTML = `<div class="error">Không tải được dữ liệu: ${escapeHtml(err.message || err)}</div>`;
 }
 
-// Avatar sizing CSS classes are minimal; inject baseline rules once.
-(function injectAvatarStyles() {
-  if (document.getElementById("ui-avatar-css")) return;
-  const css = document.createElement("style");
-  css.id = "ui-avatar-css";
-  css.textContent = `
-    .avatar {
-      display: inline-grid; place-items: center;
-      background: var(--primary); color: white;
-      border-radius: 50%;
-      font-weight: 600;
-      flex-shrink: 0;
-      overflow: hidden;
-    }
-    img.avatar { object-fit: cover; object-position: center top; }
-    .avatar.avatar-sm { width: 22px; height: 22px; font-size: .7rem; }
-    .avatar.avatar-md { width: 36px; height: 36px; font-size: .85rem; }
-    .avatar.avatar-lg { width: 56px; height: 56px; font-size: 1.4rem; font-family: var(--font-serif); }
-  `;
-  document.head.appendChild(css);
-})();
+// Avatar CSS lives in assets/style.css — no injection needed.
