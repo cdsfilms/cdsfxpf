@@ -142,6 +142,7 @@ export function projectCardHTML(project, stages) {
       ${stageStripHTML(project, stages)}
       <div class="meta">
         <span class="muted">GĐ ${project.currentStage} • ${Math.round(project.overall * 100)}%</span>
+        ${project.rewriteTimes > 0 ? `<span class="rewrite-badge" title="Đã viết lại ${project.rewriteTimes} lần">↻${project.rewriteTimes}</span>` : ""}
         <span class="spacer"></span>
         ${deadlineChipHTML(project)}
         ${docIconsHTML(project)}
