@@ -77,7 +77,7 @@ function miniCard(project, stages) {
   const href = `project.html?id=${encodeURIComponent(project.id)}`;
   return `
     <a class="mini-card" href="${href}">
-      <div class="ttl">${escapeHtml(project.title)}${project.security ? " 🔒" : ""}</div>
+      <div class="ttl">${escapeHtml(project.title)}</div>
       <div class="row">
         <span>${avatarHTML(member, "sm")} ${escapeHtml(member?.name || "—")}</span>
         <span class="badge ${typeBadgeClass(project.type)}">${escapeHtml(typeLabel(project.type))}</span>

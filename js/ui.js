@@ -120,12 +120,14 @@ export function deadlineChipHTML(project) {
   return `<span class="chip ${bucket}">${escapeHtml(rel)}</span>`;
 }
 
+// A doc field value is "secure" when it's non-empty but not a real URL.
+// e.g. user writes "security" in the cell to mean the doc exists but is restricted.
+function isSecureValue(v) {
+  return v && !v.startsWith("http");
+}
+
 export function docIconsHTML(project) {
-  // Security: hide all doc links, show lock icon instead
-  if (project.security) {
-    const author = project.member?.name ? escapeHtml(project.member.name) : "tác giả";
-    return `<span class="doc-locked" title="Dự án bảo mật — liên hệ ${author}">🔒</span>`;
-  }
+  const author = project.member?.name ? escapeHtml(project.member.name) : "tác giả";
   const ICONS = [
     ["docs_url",     "📁", "Thư mục dự án"],
     ["logline_doc",  "L",  "Logline"],
@@ -136,9 +138,12 @@ export function docIconsHTML(project) {
   ];
   const items = ICONS
     .filter(([k]) => project[k])
-    .map(([k, icon, label]) =>
-      `<a href="${escapeHtml(project[k])}" target="_blank" rel="noopener" title="${label}">${icon}</a>`,
-    ).join("");
+    .map(([k, icon, label]) => {
+      if (isSecureValue(project[k])) {
+        return `<span class="doc-ico-lock" title="${label} — liên hệ ${author} để xem">🔒</span>`;
+      }
+      return `<a href="${escapeHtml(project[k])}" target="_blank" rel="noopener" title="${label}">${icon}</a>`;
+    }).join("");
   return items ? `<div class="doclinks">${items}</div>` : "";
 }
 
@@ -150,16 +155,13 @@ export function projectCardHTML(project, stages) {
   const href = `project.html?id=${encodeURIComponent(project.id)}`;
   return `
     <div class="card project-card" data-href="${href}" tabindex="0" role="link">
-      <a class="title" href="${href}">${escapeHtml(project.title)}${project.security ? " 🔒" : ""}</a>
+      <a class="title" href="${href}">${escapeHtml(project.title)}</a>
       <span class="by">
         ${avatarHTML(member, "sm")}
         ${escapeHtml(member?.name || "—")}
         <span class="badge ${typeBadgeClass(project.type)}">${escapeHtml(typeLabel(project.type))}</span>
       </span>
-      ${project.security
-        ? `<span class="logline security-note">🔒 Dự án bảo mật — liên hệ tác giả để biết thêm.</span>`
-        : (project.logline ? `<span class="logline">${escapeHtml(project.logline)}</span>` : "")
-      }
+      ${project.logline ? `<span class="logline">${escapeHtml(project.logline)}</span>` : ""}
       ${stageStripHTML(project, stages)}
       <div class="meta">
         <span class="muted">GĐ ${project.currentStage} • ${Math.round(project.overall * 100)}%</span>

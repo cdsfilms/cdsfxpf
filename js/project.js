@@ -45,7 +45,6 @@ function render(root, p, process) {
         <span class="chip status-${p.status}">${escapeHtml(statusLabel(p.status))}</span>
         ${deadlineChipHTML(p)}
         ${p.rewriteTimes > 0 ? `<span class="chip rewrite" title="Số lần đã viết lại toàn bộ kịch bản">↻ ${p.rewriteTimes} lần viết lại</span>` : ""}
-        ${p.security ? `<span class="chip chip-lock">🔒 Bảo mật</span>` : ""}
         ${p.start_date ? `<span class="small muted">Bắt đầu ${formatDateVN(p.start_date)}</span>` : ""}
         ${p.target_date ? `<span class="small muted">Hạn ${formatDateVN(p.target_date)}</span>` : ""}
       </div>
@@ -166,19 +165,11 @@ function errorsPanel(p, process) {
   `;
 }
 
-function docLinksPanel(p) {
-  // Security: replace all links with a contact notice
-  if (p.security) {
-    const author = p.member ? `<a href="member.html?id=${encodeURIComponent(p.member.id)}">${escapeHtml(p.member.name)}</a>` : "tác giả";
-    return `
-      <div class="panel panel-lock">
-        <h3>🔒 Tài liệu — Bảo mật</h3>
-        <p class="muted small">Dự án này được bảo mật theo yêu cầu của tác giả.</p>
-        <p class="small">Vui lòng liên hệ ${author} nếu cần biết thêm chi tiết.</p>
-      </div>
-    `;
-  }
+function isSecureValue(v) {
+  return v && !v.startsWith("http");
+}
 
+function docLinksPanel(p) {
   const ICONS = [
     ["docs_url",     "📁", "Thư mục dự án"],
     ["logline_doc",  "L",  "Logline"],
@@ -194,14 +185,28 @@ function docLinksPanel(p) {
       <p class="muted small">Chưa có liên kết nào.</p>
     </div>
   `;
-  const items = present.map(([k, icon, label]) => `
-    <li>
-      <a href="${escapeHtml(p[k])}" target="_blank" rel="noopener">
-        <span class="doc-ico">${icon}</span>
-        ${escapeHtml(label)}
-      </a>
-    </li>
-  `).join("");
+  const author = p.member
+    ? `<a href="member.html?id=${encodeURIComponent(p.member.id)}">${escapeHtml(p.member.name)}</a>`
+    : "tác giả";
+  const items = present.map(([k, icon, label]) => {
+    if (isSecureValue(p[k])) {
+      return `
+        <li class="doc-locked-row">
+          <span class="doc-ico doc-ico-sec">🔒</span>
+          <span>
+            <span class="muted">${escapeHtml(label)}</span>
+            <span class="small muted"> — Vui lòng liên hệ ${author} để xem</span>
+          </span>
+        </li>`;
+    }
+    return `
+      <li>
+        <a href="${escapeHtml(p[k])}" target="_blank" rel="noopener">
+          <span class="doc-ico">${icon}</span>
+          ${escapeHtml(label)}
+        </a>
+      </li>`;
+  }).join("");
   return `
     <div class="panel">
       <h3>Tài liệu</h3>
@@ -211,7 +216,6 @@ function docLinksPanel(p) {
 }
 
 function notesPanel(p) {
-  if (p.security) return ""; // hide notes for secured projects
   if (!p.notes || !p.notes.trim()) return "";
   return `
     <div class="panel mt-3">

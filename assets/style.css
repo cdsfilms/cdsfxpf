@@ -926,15 +926,21 @@ details.substep[open] .substep-arrow { transform: rotate(90deg); }
 }
 .panel.panel-lock h3 { color: var(--text-2); }
 
-/* Security note on project card logline slot */
-.logline.security-note {
-  color: var(--text-muted);
-  font-style: italic;
-  font-size: .82rem;
+/* Lock icons — per-field security on doc panels and icon rows */
+.doc-ico-lock { font-size: .9rem; opacity: .6; cursor: default; }
+.doc-locked-row { display: flex; align-items: center; gap: .5rem; padding: .4rem 0; border-top: 1px solid var(--border); }
+.doc-locked-row:first-child { border-top: 0; }
+.doc-ico-sec {
+  width: 26px; height: 26px; border-radius: 7px;
+  background: rgba(90,90,90,.08);
+  display: grid; place-items: center; font-size: .88rem; flex-shrink: 0;
 }
-
-/* Lock icon in doc icons row */
-.doc-locked { font-size: 1rem; opacity: .55; cursor: default; }
+/* Compact lock for icon rows (home/kanban/member) */
+.doclinks .doc-ico-lock {
+  display: inline-grid; place-items: center;
+  width: 24px; height: 24px; border-radius: 7px;
+  background: rgba(90,90,90,.07); font-size: .78rem;
+}
 
 /* ── Stats ──────────────────────────────────────────────────── */
 
