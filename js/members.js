@@ -1,6 +1,6 @@
 import { loadStore } from "./store.js";
 import {
-  escapeHtml, initials, roleBadgeClass, showError, wireCardClicks,
+  escapeHtml, avatarHTML, roleBadgeClass, showError, wireCardClicks,
 } from "./ui.js";
 
 wireCardClicks();
@@ -27,7 +27,7 @@ function memberCard(m) {
   const href = `member.html?id=${encodeURIComponent(m.id)}`;
   return `
     <div class="card member-card" data-href="${href}" tabindex="0" role="link">
-      <span class="avatar avatar-lg">${escapeHtml(initials(m.name))}</span>
+      ${avatarHTML(m, "lg")}
       <div class="info">
         <div class="row" style="justify-content: space-between;">
           <h3 class="name"><a href="${href}">${escapeHtml(m.name)}</a></h3>

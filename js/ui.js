@@ -134,7 +134,7 @@ export function projectCardHTML(project, stages) {
     <div class="card project-card" data-href="${href}" tabindex="0" role="link">
       <a class="title" href="${href}">${escapeHtml(project.title)}</a>
       <span class="by">
-        <span class="avatar avatar-sm">${escapeHtml(initials(member?.name))}</span>
+        ${avatarHTML(member, "sm")}
         ${escapeHtml(member?.name || "—")}
         <span class="badge ${typeBadgeClass(project.type)}">${escapeHtml(typeLabel(project.type))}</span>
       </span>
@@ -185,10 +185,13 @@ export function showError(target, err) {
   css.textContent = `
     .avatar {
       display: inline-grid; place-items: center;
-      background: var(--terracotta); color: var(--cream);
+      background: var(--primary); color: white;
       border-radius: 50%;
       font-weight: 600;
+      flex-shrink: 0;
+      overflow: hidden;
     }
+    img.avatar { object-fit: cover; object-position: center top; }
     .avatar.avatar-sm { width: 22px; height: 22px; font-size: .7rem; }
     .avatar.avatar-md { width: 36px; height: 36px; font-size: .85rem; }
     .avatar.avatar-lg { width: 56px; height: 56px; font-size: 1.4rem; font-family: var(--font-serif); }

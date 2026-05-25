@@ -1,6 +1,6 @@
 import { loadStore } from "./store.js";
 import {
-  escapeHtml, initials, deadlineChipHTML, docIconsHTML,
+  escapeHtml, avatarHTML, deadlineChipHTML, docIconsHTML,
   currentStageSubstepBarHTML, typeLabel, typeBadgeClass,
   showError,
 } from "./ui.js";
@@ -79,7 +79,7 @@ function miniCard(project, stages) {
     <a class="mini-card" href="${href}">
       <div class="ttl">${escapeHtml(project.title)}</div>
       <div class="row">
-        <span><span class="avatar avatar-sm">${escapeHtml(initials(member?.name))}</span> ${escapeHtml(member?.name || "—")}</span>
+        <span>${avatarHTML(member, "sm")} ${escapeHtml(member?.name || "—")}</span>
         <span class="badge ${typeBadgeClass(project.type)}">${escapeHtml(typeLabel(project.type))}</span>
       </div>
       ${currentStageSubstepBarHTML(project, stages)}

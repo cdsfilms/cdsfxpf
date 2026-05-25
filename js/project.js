@@ -1,6 +1,6 @@
 import { loadStore } from "./store.js";
 import {
-  escapeHtml, initials, typeLabel, typeBadgeClass, statusLabel,
+  escapeHtml, avatarHTML, typeLabel, typeBadgeClass, statusLabel,
   deadlineChipHTML, showError,
 } from "./ui.js";
 import {
@@ -40,7 +40,7 @@ function render(root, p, process) {
       </div>
       ${p.logline ? `<p class="logline mt-1">${escapeHtml(p.logline)}</p>` : ""}
       <div class="meta-row">
-        ${p.member ? `<span><span class="avatar avatar-sm">${escapeHtml(initials(p.member.name))}</span> <a href="member.html?id=${encodeURIComponent(p.member.id)}">${escapeHtml(p.member.name)}</a></span>` : ""}
+        ${p.member ? `<span>${avatarHTML(p.member, "sm")} <a href="member.html?id=${encodeURIComponent(p.member.id)}">${escapeHtml(p.member.name)}</a></span>` : ""}
         <span class="badge ${typeBadgeClass(p.type)}">${escapeHtml(typeLabel(p.type))}</span>
         <span class="chip status-${p.status}">${escapeHtml(statusLabel(p.status))}</span>
         ${deadlineChipHTML(p)}

@@ -1,6 +1,6 @@
 import { loadStore } from "./store.js";
 import {
-  escapeHtml, initials, roleBadgeClass, stageStripHTML, deadlineChipHTML,
+  escapeHtml, avatarHTML, roleBadgeClass, stageStripHTML, deadlineChipHTML,
   typeLabel, typeBadgeClass, statusLabel, docIconsHTML, showError,
 } from "./ui.js";
 import { formatDateVN } from "./progress.js";
@@ -32,7 +32,7 @@ async function main() {
 
     root.innerHTML = `
       <section class="member-hero">
-        <span class="avatar avatar-lg">${escapeHtml(initials(m.name))}</span>
+        ${avatarHTML(m, "lg")}
         <div>
           <h1>${escapeHtml(m.name)}</h1>
           <div class="row mt-1">
