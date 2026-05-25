@@ -27,22 +27,34 @@ export function initials(name) {
   return (first[0] + (last[0] || "")).toUpperCase();
 }
 
-// Convert any Google Drive share/view link to a direct thumbnail URL.
-// Handles: /file/d/ID/view, /open?id=ID, /uc?id=ID, lh3 links → passthrough.
-function driveImgUrl(url) {
-  if (!url) return url;
-  const fileId = url.match(/\/file\/d\/([^/?#]+)/)?.[1]
+// Resolve avatar_url to a loadable src:
+//   • Google Drive share URL  → lh3.googleusercontent.com/d/ID
+//   • Full http(s) URL        → use as-is
+//   • Filename with img ext   → assets/img/<filename>  (upload to repo)
+//   • Anything else           → null (fall back to initials)
+function resolveAvatarUrl(url) {
+  if (!url) return null;
+  // Google Drive: /file/d/ID or ?id=ID
+  const driveId = url.match(/\/file\/d\/([^/?#]+)/)?.[1]
     || url.match(/[?&]id=([^&]+)/)?.[1];
-  if (fileId) return `https://lh3.googleusercontent.com/d/${fileId}`;
-  return url; // already direct (lh3, imgur, etc.)
+  if (driveId) return `https://lh3.googleusercontent.com/d/${driveId}`;
+  // Already a full URL
+  if (url.startsWith("http")) return url;
+  // Bare filename with image extension → assets/img/
+  if (/\.(png|jpe?g|gif|webp|svg|avif)$/i.test(url)) {
+    const filename = url.replace(/^.*[/\\]/, ""); // strip any path prefix
+    return `assets/img/${filename}`;
+  }
+  return null; // not a usable URL — fall back to initials
 }
 
 export function avatarHTML(member, size = "sm") {
   if (!member) return `<span class="avatar avatar-${size}">?</span>`;
-  if (member.avatar_url) {
-    const src = driveImgUrl(member.avatar_url);
+  const src = resolveAvatarUrl(member.avatar_url);
+  if (src) {
+    const fb = escapeHtml(initials(member.name));
     return `<img class="avatar avatar-${size}" src="${escapeHtml(src)}" alt="${escapeHtml(member.name)}"
-      onerror="this.outerHTML='<span class=\\'avatar avatar-${size}\\'>${escapeHtml(initials(member.name))}</span>'">`;
+      onerror="this.outerHTML='<span class=\\'avatar avatar-${size}\\'>${fb}</span>'">`;
   }
   return `<span class="avatar avatar-${size}">${escapeHtml(initials(member.name))}</span>`;
 }
