@@ -88,6 +88,7 @@ function miniCard(project, stages) {
         ${project.rewriteTimes > 0 ? `<span class="rewrite-badge" title="Đã viết lại ${project.rewriteTimes} lần">↻${project.rewriteTimes}</span>` : ""}
         <span class="spacer"></span>
         ${deadlineChipHTML(project)}
+        ${docIconsHTML(project)}
       </div>
     </a>
   `;

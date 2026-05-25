@@ -12,7 +12,7 @@
 
 import { CONFIG } from "./config.js";
 
-const CACHE_PREFIX = "sheetcache:v1:";
+const CACHE_PREFIX = "sheetcache:v2:";
 
 function cacheKey(tab) {
   return CACHE_PREFIX + tab;
@@ -84,8 +84,10 @@ function parseGvizResponse(text) {
   }
   const cols = (json.table.cols || []).map((c, i) => {
     // gviz prefers `label` (the header row text), falling back to `id`.
-    // Lowercase so sheet headers like "S1_1" match substepColumn("1.1") → "s1_1".
-    const raw = (c.label || c.id || `col${i}`).toString().trim().toLowerCase();
+    // Lowercase + replace spaces/hyphens with underscores so sheet headers like
+    // "Final Doc" → "final_doc", "S1_1" → "s1_1", "logline-doc" → "logline_doc".
+    const raw = (c.label || c.id || `col${i}`)
+      .toString().trim().toLowerCase().replace(/[\s\-]+/g, "_");
     return raw;
   });
   return (json.table.rows || []).map((row) => {

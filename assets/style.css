@@ -590,6 +590,14 @@ img.avatar { object-fit: cover; object-position: center top; display: inline-blo
 .kanban .mini-card .substep-bar i { flex: 1; height: 4px; border-radius: 2px; background: var(--bg-2); }
 .kanban .mini-card .substep-bar i.done { background: var(--mint); }
 .kanban .mini-card .substep-bar i.wip  { background: var(--peach); }
+.kanban .mini-card .doclinks { display: flex; gap: .25rem; }
+.kanban .mini-card .doclinks a {
+  display: inline-grid; place-items: center;
+  width: 20px; height: 20px; border-radius: 5px;
+  background: var(--bg-2); color: var(--text-muted); font-size: .72rem;
+  text-decoration: none;
+}
+.kanban .mini-card .doclinks a:hover { background: var(--primary-lt); color: var(--primary); }
 
 .filter-bar {
   display: flex; gap: .9rem; flex-wrap: wrap; margin-bottom: 1rem;
