@@ -7,8 +7,9 @@ const PAGES = [
   { href: "kanban.html",   label: "Kanban",      code: "KB" },
   { href: "members.html",  label: "Thành viên",  code: "TV" },
   { href: "process.html",  label: "Quy trình",   code: "QT" },
-  { href: "timeline.html", label: "Lịch trình",  code: "LT" },
-  { href: "stats.html",    label: "Thống kê",    code: "TK" },
+  { href: "timeline.html",  label: "Lịch trình",   code: "LT" },
+  { href: "stats.html",     label: "Thống kê",     code: "TK" },
+  { href: "sponsors.html",  label: "Nhà tài trợ",  code: "NT" },
 ];
 
 function currentPage() {

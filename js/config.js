@@ -21,6 +21,7 @@ export const CONFIG = {
     progress: "progress",
     errors: "errors_checklist",
     events: "events",
+    sponsors: "sponsor",
   },
 
   // How long to keep fetched sheet data in localStorage before re-fetching.
