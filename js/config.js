@@ -2,7 +2,7 @@
 
 export const CONFIG = {
   // Display name shown in the header and <title>.
-  CLUB_NAME: "Practical Filmmaking Club",
+  CLUB_NAME: "Singularity Storytelling Guild",
   CLUB_TAGLINE: "Từ ý tưởng đến kịch bản hoàn chỉnh",
 
   // Set to false when you have a real Google Sheet to read from.
